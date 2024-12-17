@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import routes from "../routes";
+import "../styles/components/Header.css"
 
 function Header() {
   return (
@@ -10,7 +11,7 @@ function Header() {
         <ul>
           {routes.map(({ path, name, component: Component }, index) => (
             <li key={index}>
-              <Link to={path} component={<Component />}>
+              <Link to={path} component={<Component />} className="link" >
                 {name}
               </Link>
             </li>

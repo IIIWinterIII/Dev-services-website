@@ -1,0 +1,26 @@
+* {
+  border: 1px solid greenyellow;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1.5em;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li .link {
+  text-decoration: none;
+}

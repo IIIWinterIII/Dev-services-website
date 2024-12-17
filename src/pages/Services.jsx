@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-function Services(props) {
-    return (
-        <div>
-            
-        </div>
-    );
+function Services() {
+  return (
+    <section className="services__section">
+      <h1>Services</h1>
+    </section>
+  );
 }
 
 export default Services;
