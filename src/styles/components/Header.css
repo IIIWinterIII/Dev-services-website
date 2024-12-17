@@ -5,6 +5,7 @@
 header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 header nav {
@@ -23,4 +24,15 @@ header nav ul li {
 
 header nav ul li .link {
   text-decoration: none;
+  color: white;
+}
+
+header .contacts-button {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+header .contacts-button a .icon {
+  color: white;
 }
