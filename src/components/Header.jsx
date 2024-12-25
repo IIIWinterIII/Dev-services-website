@@ -1,7 +1,9 @@
+import "../styles/components/Header.scss";
+
 import React from "react";
 import { Link } from "react-router-dom";
 import routes from "../routes";
-import "../styles/components/Header.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
