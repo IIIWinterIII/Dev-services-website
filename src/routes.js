@@ -5,7 +5,7 @@ import Contact from "./pages/Contact.jsx";
 
 const routes = [
   {
-    path: "/home",
+    path: "/",
     component: Home,
     name: "Главная",
     icon: "",
