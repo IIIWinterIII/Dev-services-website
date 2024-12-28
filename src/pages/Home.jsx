@@ -1,13 +1,11 @@
 import React from "react";
 import "../styles/pages/Home.scss";
-import LottieAnimation from "../components/LottieAnimation.jsx"
 
-// const subheadingsArr = [
-//   "Интуитивно понятен любому пользователю",
-//   "Подходит для любого устройства",
-//   "Для достижения ваших целей",
-//   "Идеально для вашего бизнеса",
-// ];
+import LottieAnimation from "../components/LottieAnimation.jsx";
+import ChangingTextBlock from "../components/ChangingTextBlock.jsx";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   return (
@@ -15,11 +13,14 @@ function Home() {
       <div className="hero-home">
         <div className="text-box-left">
           <h1 className="title">Создание сайтов под ключ</h1>
-          <p className="subtitle">Меняющийся текст</p>
+          <ChangingTextBlock />
         </div>
         <div className="img-anime-block">
           <LottieAnimation />
         </div>
+      </div>
+      <div className="box-arrow-bottom">
+        <FontAwesomeIcon className="icon-chevron" icon={faChevronDown} />
       </div>
     </section>
   );

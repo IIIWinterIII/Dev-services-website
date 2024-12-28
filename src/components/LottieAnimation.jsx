@@ -8,7 +8,7 @@ const LottieAnimation = () => {
       autoplay
       loop
       src={animationData}
-      style={{ height: "300px", width: "300px" }}
+      style={{ height: "600px", width: "600px" }}
     />
   );
 };
