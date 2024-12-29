@@ -1,0 +1,138 @@
+* {
+  //   border: 1px solid greenyellow;
+}
+
+.services-block-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em 0;
+
+  .title-container {
+    width: 30%;
+    font-size: 2.5em;
+    margin-right: 15em;
+  }
+
+  .box-container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+    // align-items: center;
+
+    .box {
+      width: 45%;
+      height: auto;
+      margin: 1em;
+      padding: 2em 2em;
+      background-color: rgb(29, 31, 32);
+      transition: box-shadow 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 5px 16px rgba(0, 0, 255, 0.147);
+
+        .icon-top-box {
+          color: blue;
+          transform: translateY(-10px);
+        }
+
+        .features::before {
+          color: blue;
+        }
+
+        .box-title {
+          color: blue;
+        }
+
+        .btn-link-container {
+          .link-bottom-box {
+            .btn-bottom-box {
+              border-color: blue;
+            }
+          }
+        }
+      }
+
+      .icon-top-box {
+        font-size: 4em;
+        margin-left: 5px;
+        padding-bottom: 10px;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      .box-title {
+        padding: 0 0 25px;
+        font-size: 1.6em;
+        color: white;
+        transition: color 0.3s ease;
+      }
+
+      .box-subtitle {
+        padding-bottom: 3em;
+        font-size: 1.1em;
+      }
+
+      .featuresTitle {
+        padding-bottom: 10px;
+        font-size: 1.1em;
+      }
+
+      ul {
+        padding: 0 20px;
+        list-style: none;
+
+        .features {
+          font-size: 1em;
+          padding-bottom: 10px;
+          position: relative;
+
+          &::before {
+            content: "●";
+            position: absolute;
+            top: 0;
+            left: -15px;
+            color: white;
+            transition: color 0.3s ease;
+          }
+        }
+      }
+
+      .btn-link-container {
+        margin: 2em 1em 0;
+
+        .link-bottom-box {
+          display: inline-block;
+
+          .btn-bottom-box {
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 15px 45px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: border-color 0.3s ease, transform 0.2s ease;
+
+            &:hover {
+              border-color: rgb(0, 0, 154);
+              transform: scale(1.05);
+            }
+
+            &:active {
+              transform: scale(1);
+            }
+
+            &:focus {
+              outline: none;
+              box-shadow: 0 0 5px blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
