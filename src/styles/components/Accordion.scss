@@ -1,5 +1,5 @@
 .accordion {
-  max-width: 80%;
+  max-width: 60%;
   margin: 3em auto;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -12,13 +12,13 @@
       border-bottom: none;
     }
 
-    button {
+    .btn {
       background-color: transparent;
       width: 100%;
       border: none;
       outline: none;
       padding: 15px;
-      font-size: 16px;
+      font-size: 1.4em;
       font-weight: bold;
       cursor: pointer;
       display: flex;
@@ -26,9 +26,12 @@
       transition: background 0.3s, color 0.3s;
       color: white;
 
+      &:hover,
+      &.active {
+        color: #007bff;
+      }
 
-      &:hover {
-        background: #eaeaea;
+      &.active {
       }
 
       .icon {
@@ -45,9 +48,9 @@
       overflow: hidden;
       height: 0;
       background: transparent;
-      padding: 0 15px;
-      margin: 2em 0;
-      font-size: 1em;
+      padding: 0 20px;
+      font-size: 1.2em;
+
       color: white;
       line-height: 1.6;
       transition: height 0.3s ease;
