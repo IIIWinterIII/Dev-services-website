@@ -23,7 +23,7 @@
     margin-top: 1em;
     // align-items: center;
 
-    .box {
+    .box-services {
       width: 45%;
       height: auto;
       margin: 1em;
@@ -35,22 +35,22 @@
         box-shadow: 0 5px 16px rgba(0, 0, 255, 0.147);
 
         .icon-top-box {
-          color: blue;
+          color: #007bff;
           transform: translateY(-10px);
         }
 
         .features::before {
-          color: blue;
+          color: #007bff;
         }
 
         .box-title {
-          color: blue;
+          color: #007bff;
         }
 
         .btn-link-container {
           .link-bottom-box {
             .btn-bottom-box {
-              border-color: blue;
+              border-color: #007bff;
             }
           }
         }
@@ -128,7 +128,7 @@
 
             &:focus {
               outline: none;
-              box-shadow: 0 0 5px blue;
+              box-shadow: 0 0 5px #007bff;
             }
           }
         }

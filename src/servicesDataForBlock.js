@@ -1,5 +1,9 @@
 import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
-import { faChartLine, faUserTie } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChartLine,
+  faMobileScreen,
+  faUserTie,
+} from "@fortawesome/free-solid-svg-icons";
 import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons/faPeopleGroup";
 
 const servicesDataForBlock = [
@@ -53,6 +57,19 @@ const servicesDataForBlock = [
       "Содержит разделы о компании, услугах, новостях и контактах",
       "Структурированный и продуманный дизайн для удобного представления информации",
       "Применяется средними и крупными компаниями для построения доверия и повышения узнаваемости",
+    ],
+    path: "",
+  },
+  {
+    icon: faMobileScreen,
+    name: "PWA (Прогрессивное веб-приложение)",
+    subtitle:
+      "PWA — это веб-приложение, которое объединяет лучшие черты мобильных и веб-решений. Оно работает в браузере, но выглядит и функционирует как нативное приложение.",
+    featuresTitle: "Основные особенности:",
+    features: [
+      "Установка на устройства без необходимости скачивания из магазинов приложений",
+      "Оффлайн-режим для доступа без подключения к интернету",
+      "Высокая скорость загрузки и отзывчивость интерфейса",
     ],
     path: "",
   },
