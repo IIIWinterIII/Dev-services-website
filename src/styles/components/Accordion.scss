@@ -1,61 +1,70 @@
-.accordion {
-  max-width: 60%;
-  margin: 3em auto;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  overflow: hidden;
+.accordion-container {
+  padding-bottom: 5em;
 
-  .accordion-item {
+  .accordion-title {
+    font-size: 2.5em;
+    margin-left: 3em;
+  }
+
+  .accordion {
+    max-width: 60%;
+    margin: 3em auto;
+    border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    overflow: hidden;
 
-    &:last-child {
-      border-bottom: none;
-    }
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
 
-    .btn {
-      background-color: transparent;
-      width: 100%;
-      border: none;
-      outline: none;
-      padding: 15px;
-      font-size: 1.4em;
-      font-weight: bold;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      transition: background 0.3s, color 0.3s;
-      color: white;
-
-      &:hover,
-      &.active {
-        color: #007bff;
+      &:last-child {
+        border-bottom: none;
       }
 
-      .icon {
-        transition: transform 0.3s ease, color 0.3s ease;
+      .btn {
+        background-color: transparent;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 15px;
+        font-size: 1.4em;
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        transition: background 0.3s, color 0.3s;
+        color: white;
+
+        &:hover,
+        &.active {
+          color: #007bff;
+        }
+
+        .icon {
+          transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .icon.rotate {
+          transform: rotate(180deg);
+          color: blue;
+        }
       }
 
-      .icon.rotate {
-        transform: rotate(180deg);
-        color: blue;
-      }
-    }
+      .answer {
+        overflow: hidden;
+        height: 0;
+        background: transparent;
+        padding: 0 20px;
+        font-size: 1.2em;
 
-    .answer {
-      overflow: hidden;
-      height: 0;
-      background: transparent;
-      padding: 0 20px;
-      font-size: 1.2em;
+        color: white;
+        line-height: 1.6;
+        transition: height 0.3s ease;
+        font-family: "Gilroy", Arial, sans-serif;
 
-      color: white;
-      line-height: 1.6;
-      transition: height 0.3s ease;
-      font-family: "Gilroy", Arial, sans-serif;
-
-      p {
-        margin: 0;
-        padding: 15px 0;
+        p {
+          margin: 0;
+          padding: 15px 0;
+        }
       }
     }
   }

@@ -31,42 +31,53 @@ function Home() {
         <FontAwesomeIcon className="icon-chevron" icon={faChevronDown} />
       </div>
       <ServicesBlock />
-      <div className="stages-creation">
-        <div className="box-stages">
-          <div className="text-section">
-            <h1 className="stage-title">Постановка целей</h1>
-            <p className="stage-description">Определение задач и типа сайта</p>
+
+      {/* Этапы создания */}
+      <div className="stages-container">
+        <h1 className="stages-container-title">Этапы создания сайта</h1>
+        <div className="stages-creation">
+          <div className="box-stages">
+            <div className="text-section">
+              <h1 className="stage-title">Постановка целей</h1>
+              <p className="stage-description">
+                Определение задач и типа сайта
+              </p>
+            </div>
+            <FontAwesomeIcon
+              icon={faBullseye}
+              className="icon-right-box-stage"
+            />
           </div>
-          <FontAwesomeIcon icon={faBullseye} className="icon-right-box-stage" />
-        </div>
-        <div className="box-stages">
-          <div className="text-section">
-            <h1 className="stage-title">Подготовка макета</h1>
-            <p className="stage-description">Создание структуры и дизайна</p>
+          <div className="box-stages">
+            <div className="text-section">
+              <h1 className="stage-title">Подготовка макета</h1>
+              <p className="stage-description">Создание структуры и дизайна</p>
+            </div>
+            <FontAwesomeIcon
+              icon={faDraftingCompass}
+              className="icon-right-box-stage"
+            />
           </div>
-          <FontAwesomeIcon
-            icon={faDraftingCompass}
-            className="icon-right-box-stage"
-          />
-        </div>
-        <div className="box-stages">
-          <div className="text-section">
-            <h1 className="stage-title">Разработка проекта</h1>
-            <p className="stage-description">
-              Реализация функционала и тестирование
-            </p>
+          <div className="box-stages">
+            <div className="text-section">
+              <h1 className="stage-title">Разработка проекта</h1>
+              <p className="stage-description">
+                Реализация функционала и тестирование
+              </p>
+            </div>
+            <FontAwesomeIcon icon={faCode} className="icon-right-box-stage" />
           </div>
-          <FontAwesomeIcon icon={faCode} className="icon-right-box-stage" />
-        </div>
-        <div className="box-stages">
-          <div className="text-section">
-            <h1 className="stage-title">Запуск</h1>
-            <p className="stage-description">Публикация готового сайта</p>
+          <div className="box-stages">
+            <div className="text-section">
+              <h1 className="stage-title">Запуск</h1>
+              <p className="stage-description">Публикация готового сайта</p>
+            </div>
+            <FontAwesomeIcon icon={faRocket} className="icon-right-box-stage" />
           </div>
-          <FontAwesomeIcon icon={faRocket} className="icon-right-box-stage" />
         </div>
       </div>
-      <Accordion />
+      
+        <Accordion />
     </section>
   );
 }

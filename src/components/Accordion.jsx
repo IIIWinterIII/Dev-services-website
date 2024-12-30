@@ -58,30 +58,33 @@ const Accordion = () => {
   ];
 
   return (
-    <div className="accordion">
-      {faqs.map((faq, index) => (
-        <div className="accordion-item" key={index}>
-          <button
-            className={`btn ${activeIndex === index ? "active" : ""}`}
-            onClick={() => toggleAccordion(index)}
-          >
-            {faq.question}
-            <FontAwesomeIcon
-              className={`icon ${activeIndex === index ? "rotate" : ""}`}
-              icon={faChevronDown}
-            />
-          </button>
-          <div
-            ref={(el) => (contentRef.current[index] = el)}
-            className="answer"
-            style={{
-              height: getHeight(index),
-            }}
-          >
-            <p>{faq.answer}</p>
+    <div className="accordion-container">
+      <h1 className="accordion-title">Вопрос-ответ</h1>
+      <div className="accordion">
+        {faqs.map((faq, index) => (
+          <div className="accordion-item" key={index}>
+            <button
+              className={`btn ${activeIndex === index ? "active" : ""}`}
+              onClick={() => toggleAccordion(index)}
+            >
+              {faq.question}
+              <FontAwesomeIcon
+                className={`icon ${activeIndex === index ? "rotate" : ""}`}
+                icon={faChevronDown}
+              />
+            </button>
+            <div
+              ref={(el) => (contentRef.current[index] = el)}
+              className="answer"
+              style={{
+                height: getHeight(index),
+              }}
+            >
+              <p>{faq.answer}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
