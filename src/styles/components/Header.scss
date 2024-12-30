@@ -19,6 +19,7 @@ header {
   justify-content: space-around;
   padding: 10px;
   z-index: 1000;
+  backdrop-filter: blur(15px);
 
   .link-on-logo {
     text-decoration: none;
