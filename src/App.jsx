@@ -7,10 +7,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 // Кнопка наверх
 import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
-
 // Скрипт "Страница при переключении имеет top: 0"
 import PageAlwaysOnTop from "./components/PageAlwaysOnTop.jsx";
-
+// Фиксированная кнопка контакта
+import FixedButtonContact from "./components/FixedButtonContact.jsx"
 
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
           ))}
         </Routes>
         <ScrollToTopButton />
+        <FixedButtonContact />
       </main>
       <Footer />
     </div>

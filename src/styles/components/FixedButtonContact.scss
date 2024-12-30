@@ -1,0 +1,60 @@
+.fixed-contact-button {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    box-shadow: 0 0 5px #007bff;
+  }
+
+  .icon-fixed-button {
+    font-size: 1.4em;
+    animation: livited 3s infinite;
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 36px;
+    width: 10px;
+    color: white;
+    box-shadow: 0 0 10px 5px #007bff;
+    background-color: #007bff;
+    animation: shadowAnime 3s infinite;
+  }
+
+  @keyframes livited {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes shadowAnime {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+}
