@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ServicesBlock() {
-  return ( 
+  return (
     <div className="services-block-container">
       <h1 className="title-container">Разработка веб-сайтов для бизнеса</h1>
       <div className="box-container">

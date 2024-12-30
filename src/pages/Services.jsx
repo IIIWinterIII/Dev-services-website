@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import "../styles/pages/Services.scss";
 // anime img
 import ServicesLottieAnimation from "../components/ServicesLottieAnimation.jsx";
+// Таблица
+import SiteTypesTable from "../components/SiteTypesTable.jsx";
 
 import servicesDataForServicesPage from "../serviceDataForServicePage.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,7 +16,8 @@ function Services() {
     if (hash) {
       const element = document.querySelector(hash);
       if (element) {
-        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const elementPosition =
+          element.getBoundingClientRect().top + window.scrollY;
         const offset = 120;
 
         window.scrollTo({
@@ -94,6 +97,7 @@ function Services() {
           )}
         </div>
       </div>
+      <SiteTypesTable />
     </section>
   );
 }

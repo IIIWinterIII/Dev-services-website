@@ -76,8 +76,8 @@ function Home() {
           </div>
         </div>
       </div>
-      
-        <Accordion />
+
+      <Accordion />
     </section>
   );
 }
