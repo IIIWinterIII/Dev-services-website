@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/pages/Home.scss";
 
-import LottieAnimation from "../components/LottieAnimation.jsx";
+import HomeLottieAnimation from "../components/HomeLottieAnimation.jsx";
 import ChangingTextBlock from "../components/ChangingTextBlock.jsx";
 import ServicesBlock from "../components/ServicesBlock.jsx";
 import Accordion from "../components/Accordion.jsx";
@@ -24,7 +24,7 @@ function Home() {
           <ChangingTextBlock />
         </div>
         <div className="img-anime-block">
-          <LottieAnimation />
+          <HomeLottieAnimation />
         </div>
       </div>
       <div className="box-arrow-bottom">

@@ -24,7 +24,7 @@ function ServicesBlock() {
                 ))}
               </ul>
               <div className="btn-link-container">
-                <Link to={`/services${path}`} className="link-bottom-box">
+                <Link to={`/services#${path}`} className="link-bottom-box">
                   <button className="btn-bottom-box">Подробнее </button>
                 </Link>
               </div>

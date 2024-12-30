@@ -1,8 +1,8 @@
 import React from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
-import animationData from "../assets/animation-IMG/Laptop-Animation.json";
+import animationData from "../assets/animation-IMG/services-animation-img.json";
 
-const LottieAnimation = () => {
+const ServicesLottieAnimation = () => {
   return (
     <Player
       autoplay
@@ -13,4 +13,4 @@ const LottieAnimation = () => {
   );
 };
 
-export default LottieAnimation;
+export default ServicesLottieAnimation;
