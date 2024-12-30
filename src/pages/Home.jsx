@@ -66,7 +66,7 @@ function Home() {
           <FontAwesomeIcon icon={faRocket} className="icon-right-box-stage" />
         </div>
       </div>
-        <Accordion />
+      <Accordion />
     </section>
   );
 }

@@ -28,10 +28,15 @@ header {
       text-align: center;
       font-weight: bold;
       font-size: 1.4em;
+      transition: color 0.3s ease;
 
       .icon-logo {
         margin-bottom: -5px;
       }
+    }
+
+    &:hover {
+      color: #007bff;
     }
   }
 
