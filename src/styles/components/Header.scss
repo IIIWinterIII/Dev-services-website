@@ -13,13 +13,6 @@
   justify-content: center;
 }
 
-@font-face {
-  font-family: "Gugi-Regular";
-  src: url("//public/assets/fonts/Gugi-Regular.woff2") format("woff");
-  font-weight: bold;
-  font-style: inherit;
-}
-
 header {
   @include flex-center;
   width: 100%;
@@ -39,7 +32,8 @@ header {
       font-weight: bold;
       font-size: 1.6em;
       transition: color 0.3s ease;
-      font-family: "Gugi-Regular";
+      font-family: Georgia, "Times New Roman", Times, serif;
+
       .icon-logo {
         margin-right: 5px;
         color: #007bff;
