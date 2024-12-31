@@ -1,6 +1,6 @@
 import Home from "./pages/Home.jsx";
 import Services from "./pages/Services.jsx";
-import About from "./pages/About.jsx";
+// import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 
 const routes = [
@@ -16,12 +16,12 @@ const routes = [
     name: "Услуги",
     icon: "",
   },
-  {
-    path: "/about",
-    component: About,
-    name: "Обо мне",
-    icon: "",
-  },
+  // {
+  //   path: "/about",
+  //   component: About,
+  //   name: "Обо мне",
+  //   icon: "",
+  // },
   {
     path: "/contact",
     component: Contact,
