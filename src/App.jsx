@@ -11,6 +11,8 @@ import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
 import PageAlwaysOnTop from "./components/PageAlwaysOnTop.jsx";
 // Фиксированная кнопка контакта
 import FixedButtonContact from "./components/FixedButtonContact.jsx"
+// Форма заявки
+import ContactForm from "./components/ContactForm.jsx"
 
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
         </Routes>
         <ScrollToTopButton />
         <FixedButtonContact />
+        <ContactForm />
       </main>
       <Footer />
     </div>
