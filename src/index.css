@@ -4,16 +4,6 @@
   box-sizing: border-box;
 }
 
-/* @font-face {
-  font-family: "Nunito-VariableFont";
-  src: url("../public/assets/fonts/Nunito-VariableFont_wght.woff")
-    format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  
-  "Nunito-VariableFont",
-} */
-
 /* кастомный скролл */
 ::-webkit-scrollbar {
   width: 4px;
@@ -30,7 +20,6 @@
   background-color: #007bff;
 }
 
-
 html,
 body {
   width: 100%;
@@ -45,6 +34,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

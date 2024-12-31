@@ -1,62 +1,140 @@
 * {
-  //   border: 1px solid greenyellow;
+  // border: 1px solid greenyellow;
+}
+
+@mixin transition-border-color {
+  transition: border-color 0.3s ease;
+}
+
+@mixin border-color {
+  border-color: #007bff;
 }
 
 .contact-container {
   width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 5em;
-  margin: 3em 0 0;
+  align-items: center;
+  flex-direction: column;
 
-  .box-with-contact {
+  .title-contact-container {
+    width: 50%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+  }
+
+  .hero-contact {
+    margin: 1em 0 0 5em;
+    width: 80%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    &:hover {
-      .title-contact {
-        border-color: #007bff;
-      }
+    .anime-img {
+      margin-top: -40px;
     }
 
-    .title-contact {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      margin-bottom: 10px;
+    .contact-section {
       width: 100%;
-      padding-bottom: 10px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.586);
-      transition: border-color 0.3s ease;
-      font-size: 1.5em;
-      height: 60px;
 
-      .icon-contact {
-        font-size: 1em;
-        color: white;
-      }
-    }
-    a {
-      .icon-contact {
-        font-size: 2em;
-        color: white;
-        transition: color 0.3s ease;
+      .box-with-contact-mail {
+        border: 1px solid rgba(255, 255, 255, 0.459);
+        padding: 15px;
+        @include transition-border-color;
 
         &:hover {
-          color: #007bff;
+          @include border-color;
+
+          .title-contact-mail {
+            @include border-color;
+
+            .icon-contact-mail {
+              color: #007bff;
+            }
+          }
+
+          .mail-a {
+            @include border-color;
+          }
+        }
+
+        .title-contact-mail {
+          width: 15%;
+          font-size: 1.5em;
+          margin: 5px 0;
+          margin-bottom: 20px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.459);
+          padding-bottom: 5px;
+          @include transition-border-color;
+
+          .icon-contact-mail {
+            padding-left: 10px;
+            transition: color 0.3s ease;
+          }
+        }
+
+        .mail-a {
+          text-decoration: none;
+          color: white;
+          font-size: 0.9em;
+          margin-bottom: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.459);
+          padding: 7px 15px;
+          border-radius: 2px;
+          @include transition-border-color;
+
+          &:hover {
+            border-color: #004793;
+          }
         }
       }
-    }
 
-    .mail-a {
-      text-decoration: none;
-      color: white;
-      font-size: 1.2em;
-      transition: color 0.3s ease;
+      .section-t-w-box {
+        border: 1px solid rgba(255, 255, 255, 0.459);
+        margin: 2em 0;
+        padding: 15px;
 
-      &:hover {
-        color: #007bff;
+        @include transition-border-color;
+
+        &:hover {
+          @include border-color;
+
+          .box-with-contact-t-w {
+            .title-contact {
+              @include border-color;
+            }
+          }
+        }
+
+        .box-with-contact-t-w {
+          display: flex;
+          align-items: center;
+          gap: 1em;
+          margin-top: 10px;
+
+          .title-contact {
+            width: 15%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.459);
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+            @include transition-border-color;
+          }
+
+          .icon-contact {
+            font-size: 1.8em;
+            color: white;
+            margin-left: 5px;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: #007bff;
+            }
+          }
+        }
+      }
+      .text-w-t,
+      .email-text {
+        margin-top: 20px;
+        padding: 5px;
       }
     }
   }
