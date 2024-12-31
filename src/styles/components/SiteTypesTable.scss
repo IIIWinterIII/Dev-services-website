@@ -1,15 +1,15 @@
-caption {
-  width: 80%;
-  margin-bottom: 20px;
-  font-size: 2em;
-  text-align: start;
-  font-weight: bold;
-}
-
 .site-types-table {
   width: 80%;
   border-collapse: collapse;
   margin: 10px 0;
+
+  caption {
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: start;
+    font-weight: bold;
+  }
 
   th,
   td {
