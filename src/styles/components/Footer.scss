@@ -1,4 +1,129 @@
-/* * {
-  border: 1px solid greenyellow;
-} */
+// * {
+//   border: 1px solid greenyellow;
+// }
 
+@mixin flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8em;
+  border-top: 1px solid rgba(255, 255, 255, 0.466);
+  padding: 10px;
+
+  .logo-icon-messager-container {
+    margin: 20px 0;
+
+    .link-on-logo {
+      text-decoration: none;
+      color: white;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.6em;
+        transition: color 0.3s ease;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin-bottom: 10px;
+
+        .icon-logo {
+          margin-right: 5px;
+          color: #007bff;
+        }
+      }
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+
+    .messages-icon-footer {
+      display: flex;
+
+      a {
+        position: relative;
+        margin: 0 5px;
+        border: 2px solid rgba(255, 255, 255, 0.488);
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        @include flex-center-center;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+        .icon-contact {
+          font-size: 1.2em;
+          color: rgba(255, 255, 255, 0.827);
+          transition: color 0.3s ease;
+        }
+
+        &:hover .icon-contact {
+          color: white;
+        }
+
+        &:hover {
+          border-color: white;
+          box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  }
+
+  .copyright-footer {
+    margin: auto 0;
+
+    .copyright-span {
+      color: #007bff;
+    }
+  }
+
+  .link-section-footer {
+    margin: auto 0;
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: 5px 0;
+
+        .link-footer {
+          text-decoration: none;
+          color: white;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: rgba(255, 255, 255, 0.566);
+          }
+        }
+      }
+    }
+  }
+
+  .mail-icon-container-footer {
+    margin: auto 0;
+    transition: color 0.3s ease;
+    color: white;
+
+    &:hover {
+      color: #007bff;
+    }
+
+    .mail-a-footer {
+      text-decoration: none;
+      color: inherit;
+
+      .icon-mail-footer {
+        font-size: 1.1em;
+        margin-right: 5px;
+        transition: inherit;
+      }
+    }
+  }
+}
