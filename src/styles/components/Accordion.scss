@@ -33,6 +33,7 @@
         justify-content: space-between;
         transition: background 0.3s, color 0.3s;
         color: white;
+        text-align: start;
 
         &:hover,
         &.active {
@@ -66,6 +67,31 @@
           padding: 15px 0;
         }
       }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .accordion-title {
+      text-align: center;
+      font-size: 2.3em;
+      margin-left: 0;
+    }
+
+    .accordion {
+      max-width: 80%;
+    }
+  }
+
+  /* Средние экраны (современные смартфоны) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .accordion-title {
+      text-align: center;
+      font-size: 2.3em;
+      margin-left: 0;
+    }
+
+    .accordion {
+      max-width: 80%;
     }
   }
 }

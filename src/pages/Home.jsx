@@ -35,8 +35,10 @@ function Home() {
       {/* Этапы создания */}
       <div className="stages-container">
         <h1 className="stages-container-title">Этапы создания сайта</h1>
+
         <div className="stages-creation">
           <div className="box-stages">
+            <h1 className="count-box">1</h1>
             <div className="text-section">
               <h1 className="stage-title">Постановка целей</h1>
               <p className="stage-description">
@@ -49,6 +51,7 @@ function Home() {
             />
           </div>
           <div className="box-stages">
+            <h1 className="count-box">2</h1>
             <div className="text-section">
               <h1 className="stage-title">Подготовка макета</h1>
               <p className="stage-description">Создание структуры и дизайна</p>
@@ -59,6 +62,7 @@ function Home() {
             />
           </div>
           <div className="box-stages">
+            <h1 className="count-box">3</h1>
             <div className="text-section">
               <h1 className="stage-title">Разработка проекта</h1>
               <p className="stage-description">
@@ -68,6 +72,7 @@ function Home() {
             <FontAwesomeIcon icon={faCode} className="icon-right-box-stage" />
           </div>
           <div className="box-stages">
+            <h1 className="count-box">4</h1>
             <div className="text-section">
               <h1 className="stage-title">Запуск</h1>
               <p className="stage-description">Публикация готового сайта</p>

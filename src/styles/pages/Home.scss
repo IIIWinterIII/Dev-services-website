@@ -52,6 +52,11 @@
     .img-anime-block {
       // width: 50%;
       margin-left: 3em;
+
+      .home-lottie-animation-player {
+        height: 600px;
+        width: 600px;
+      }
     }
   }
 
@@ -105,6 +110,17 @@
         border: 1px solid white;
         transition: border-color 0.3s;
         animation: highlight 4s infinite;
+        position: relative;
+
+        .count-box {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          color: rgba(255, 255, 255, 0.288);
+          font-family: "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          font-size: 2em;
+        }
 
         &:nth-child(1) {
           animation-delay: 0s;
@@ -141,15 +157,15 @@
           .stage-title {
             padding-bottom: 10px;
           }
-          .stage-description {
-          }
+          // .stage-description {
+          // }
         }
 
         .icon-right-box-stage {
           font-size: 3em;
           margin: 5px;
 
-          transition: color 0.3s;
+          transition: color 0.5s;
           animation: icon-highlight 4s infinite;
         }
       }
@@ -195,5 +211,173 @@
   .accordion-container-home {
     margin: 40px 0;
     width: 100%;
+  }
+
+  /* Маленькие экраны (старые смартфоны) */
+  @media (max-width: 480px) {
+    .hero-home {
+      width: 100%;
+      height: auto;
+      @include flex-center-center;
+      flex-direction: column;
+      position: relative;
+
+      .text-box-left {
+        margin-left: 0;
+        width: 80%;
+        margin-top: 2.2em;
+
+        .title {
+          font-size: 2.2em;
+          margin-bottom: 0.5em;
+        }
+
+        .subtitle {
+          font-size: 1.4em;
+        }
+
+        .subtitle-bottom {
+          font-size: 1.2em;
+        }
+      }
+
+      .img-anime-block {
+        margin-left: 0;
+
+        .home-lottie-animation-player {
+          height: 380px;
+          width: 380px;
+        }
+      }
+    }
+
+    .box-arrow-bottom {
+      position: absolute;
+      bottom: 70px;
+      left: 0;
+    }
+
+    .stages-container {
+      margin: 5em 0 7em;
+
+      .stages-container-title {
+        width: 70%;
+        text-align: center;
+        font-size: 2.2em;
+        margin-left: 0;
+        margin: auto;
+        padding: 2em 0 0.5em;
+      }
+    }
+  }
+
+  /* Средние экраны (современные смартфоны) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .hero-home {
+      width: 100%;
+      height: auto;
+      @include flex-center-center;
+      flex-direction: column;
+
+      .text-box-left {
+        margin-left: 0;
+
+        .title {
+          font-size: 2.5em;
+          margin-bottom: 1em;
+        }
+
+        .subtitle {
+          font-size: 1.3em;
+        }
+
+        .subtitle-bottom {
+          font-size: 1.2em;
+        }
+      }
+
+      .img-anime-block {
+        margin-left: 0;
+
+        .home-lottie-animation-player {
+          height: 450px;
+          width: 450px;
+        }
+      }
+    }
+
+    .stages-container {
+      margin: 10em 0;
+
+      .stages-container-title {
+        width: 70%;
+        text-align: center;
+        font-size: 2.2em;
+        margin-left: 0;
+        margin: auto;
+        padding: 2em 0 0.5em;
+      }
+    }
+  }
+
+  /* Планшеты (вертикальная ориентация) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .hero-home {
+      width: 100%;
+      height: auto;
+      @include flex-center-center;
+      flex-direction: column;
+
+      .text-box-left {
+        margin-left: 0;
+
+        .title {
+          font-size: 3em;
+        }
+      }
+
+      .img-anime-block {
+        margin-left: 0;
+
+        .home-lottie-animation-player {
+          height: 500px;
+          width: 500px;
+        }
+      }
+    }
+  }
+
+  /* Планшеты (горизонтальная ориентация) */
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    .hero-home {
+      .text-box-left {
+        margin-left: 4em;
+      }
+
+      .img-anime-block {
+        margin-left: 0;
+
+        .home-lottie-animation-player {
+          height: 500px;
+          width: 500px;
+        }
+      }
+    }
+
+    .stages-container {
+      margin: 10em 1em;
+    }
+  }
+
+  /* Ноутбуки (маленькие экраны) */
+  @media (min-width: 1201px) and (max-width: 1440px) {
+    .hero-home {
+      .img-anime-block {
+        .home-lottie-animation-player {
+          height: 550px;
+          width: 550px;
+        }
+      }
+    }
   }
 }

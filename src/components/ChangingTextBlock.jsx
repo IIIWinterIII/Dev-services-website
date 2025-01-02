@@ -9,12 +9,12 @@ const ChangingTextBlock = () => {
     "Идеально для вашего бизнеса",
   ];
 
-    const lists = [
-      "Дизайн и функционал разработаны так, чтобы любой пользователь мог легко разобраться с интерфейсом без необходимости в инструкциях",
-      "Сайт адаптирован для работы на компьютерах, планшетах и мобильных телефонах, обеспечивая удобный доступ с любого экрана",
-      "Функционал и структура сайта спроектированы так, чтобы поддерживать и ускорять выполнение ваших бизнес-задач",
-      "Решение настроено с учетом ваших специфических потребностей, создавая уникальный и эффективный инструмент для вашего бренда",
-    ];
+  const lists = [
+    "Дизайн и функционал разработаны так, чтобы любой пользователь мог легко разобраться с интерфейсом без необходимости в инструкциях",
+    "Сайт адаптирован для работы на компьютерах, планшетах и мобильных телефонах, обеспечивая удобный доступ с любого экрана",
+    "Функционал и структура сайта спроектированы так, чтобы поддерживать и ускорять выполнение ваших бизнес-задач",
+    "Решение настроено с учетом ваших специфических потребностей, создавая уникальный и эффективный инструмент для вашего бренда",
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -39,19 +39,22 @@ const ChangingTextBlock = () => {
           {phrases[currentIndex]}
         </motion.div>
       </AnimatePresence>
-      <div className="text-block-bottom" style={{ height: "100px", marginTop: "10px" }}>
-      <AnimatePresence>
-        <motion.a
-          key={currentIndex}
-          className="subtitle-bottom"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          {lists[currentIndex]}
-        </motion.a>
-      </AnimatePresence>
-    </div>
+      <div
+        className="text-block-bottom"
+        style={{ height: "100px", marginTop: "10px" }}
+      >
+        <AnimatePresence>
+          <motion.a
+            key={currentIndex}
+            className="subtitle-bottom"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            {lists[currentIndex]}
+          </motion.a>
+        </AnimatePresence>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 * {
-  //   border: 1px solid greenyellow;
+  // border: 1px solid greenyellow;
 }
 
 .services-block-container {
@@ -132,6 +132,99 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+/* Маленькие экраны (старые смартфоны) */
+@media (max-width: 480px) {
+  .services-block-container {
+    .box-container {
+      width: 100%;
+
+      .box-services {
+        width: 80%;
+      }
+    }
+
+    .title-container {
+      width: 80%;
+      margin-right: 0;
+      font-size: 2em;
+    }
+  }
+}
+
+/* Средние экраны (современные смартфоны) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .services-block-container {
+    .box-container {
+      width: 100%;
+
+      .box-services {
+        width: 80%;
+      }
+    }
+
+    .title-container {
+      width: 80%;
+      margin-right: 0;
+      font-size: 2em;
+    }
+  }
+}
+/* Планшеты (вертикальная ориентация) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .services-block-container {
+    .box-container {
+      width: 100%;
+
+      .box-services {
+        width: 40%;
+      }
+    }
+
+    .title-container {
+      width: 50%;
+      margin-right: 5em;
+    }
+  }
+}
+
+/* Планшеты (горизонтальная ориентация) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .services-block-container {
+    .box-container {
+      width: 100%;
+
+      .box-services {
+        width: 40%;
+      }
+    }
+
+    .title-container {
+      width: 50%;
+      margin-right: 9em;
+    }
+  }
+}
+
+/* Ноутбуки (маленькие экраны) */
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .services-block-container {
+    .title-container {
+      width: 40%;
+      margin-right: 10em;
+    }
+  }
+}
+
+@media (min-width: 1921px) {
+  .services-block-container {
+    .box-container {
+      .box-services {
+        width: 40%;
       }
     }
   }
