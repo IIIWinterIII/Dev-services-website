@@ -1,4 +1,7 @@
 import React from "react";
+import "../styles/pages/Services.scss";
+
+
 import { Player } from "@lottiefiles/react-lottie-player";
 import animationData from "../assets/animation-IMG/services-animation-img.json";
 
@@ -8,7 +11,8 @@ const ServicesLottieAnimation = () => {
       autoplay
       loop
       src={animationData}
-      style={{ height: "600px", width: "600px" }}
+      className="anime-image-services-hero"
+      // style={{ height: "600px", width: "600px" }}
     />
   );
 };

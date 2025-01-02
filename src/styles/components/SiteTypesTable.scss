@@ -1,39 +1,59 @@
-.site-types-table {
+.table-container {
   width: 80%;
-  border-collapse: collapse;
-  margin: 10px 0;
+  overflow-x: auto;
+  margin: 0 auto;
 
-  caption {
-    width: 80%;
-    margin-bottom: 20px;
-    font-size: 2em;
-    text-align: start;
-    font-weight: bold;
-  }
+  .site-types-table {
+    margin: 10px 0;
+    width: 100%;
+    border-collapse: collapse;
 
-  th,
-  td { 
-    border: 1px solid #ffffff;
-    padding: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    caption {
+      width: 80%;
+      margin-bottom: 20px;
+      font-size: 2em;
+      text-align: start;
+      font-weight: bold;
+    }
 
-    &:hover {
-      background-color: rgb(29, 31, 32);
-      transform: translateY(-5px);
+    th,
+    td {
+      border: 1px solid #ffffff;
+      padding: 10px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: rgb(29, 31, 32);
+        transform: translateY(-5px);
+      }
+    }
+
+    th {
+      text-align: left;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      font-size: 0.9em;
+
+      li {
+        padding-bottom: 5px;
+      }
     }
   }
+}
 
-  th {
-    text-align: left;
-  }
+/* Средние экраны (современные смартфоны) */
+@media (max-width: 768px) {
+  .site-types-table {
+    width: 100%;
+    font-size: 0.8em; /* Уменьшение общего размера текста */
+    margin: 5px 0;
 
-  ul {
-    margin: 0;
-    padding-left: 20px;
-    font-size: 0.9em;
-
-    li {
-      padding-bottom: 5px;
+    caption {
+      font-size: 40px; /* Уменьшение размера заголовка */
+      text-align: center; /* Центрирование заголовка */
     }
   }
 }

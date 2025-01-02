@@ -64,6 +64,11 @@
     .img-anime-block {
       // width: 50%;
       margin-left: 3em;
+
+      .anime-image-services-hero {
+        width: 600px;
+        height: 600px;
+      }
     }
   }
 
@@ -214,11 +219,181 @@
         }
 
         // Текст (Плюсы)
-        .pros-title {
-        }
+        // .pros-title {
+        // }
 
         // Текст (Минусы)
-        .cons-title {
+        // .cons-title {
+        // }
+      }
+    }
+  }
+}
+
+/* Маленькие экраны (старые смартфоны) */
+@media (max-width: 480px) {
+  .services-container {
+    .hero-services {
+      height: auto;
+      flex-direction: column;
+
+      .left-text-seciton {
+        margin-top: 2.2em;
+        margin-left: 0;
+        width: 85%;
+        padding-left: 15px;
+        align-items: center;
+
+        .title {
+          font-size: 2.2em;
+        }
+
+        .subtitle {
+          font-size: 1.2em;
+        }
+      }
+
+      .img-anime-block {
+        margin-left: 0;
+
+        .anime-image-services-hero {
+          height: 380px;
+          width: 380px;
+        }
+      }
+    }
+
+    .types-services-block {
+      margin: 50px 0;
+
+      .type-title-container {
+        margin-right: 1.2em;
+        font-size: 2.2em;
+
+        width: 70%;
+      }
+
+      .box-section {
+        width: 100%;
+
+        .box-with-data-type {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+/* Средние экраны (современные смартфоны) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .services-container {
+    .hero-services {
+      height: auto;
+      flex-direction: column;
+
+      .left-text-seciton {
+        margin: 80px 0 0 0;
+        width: 400px;
+        padding-left: 15px;
+
+        .title {
+          font-size: 2.5em;
+        }
+
+        .subtitle {
+          font-size: 1.3em;
+        }
+      }
+
+      .img-anime-block {
+        margin-left: 0;
+
+        .anime-image-services-hero {
+          height: 450px;
+          width: 450px;
+        }
+      }
+    }
+
+    .types-services-block {
+      margin: 50px 0;
+
+      .type-title-container {
+        margin-right: 2em;
+        width: 70%;
+      }
+
+      .box-section {
+        width: 100%;
+
+        .box-with-data-type {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+/* Планшеты (вертикальная ориентация) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .services-container {
+    .hero-services {
+      height: auto;
+      flex-direction: column;
+
+      .left-text-seciton {
+        margin: 80px 0 0 0;
+      }
+
+      .img-anime-block {
+        margin-left: 0;
+
+        .anime-image-services-hero {
+          width: 500px;
+          height: 500px;
+        }
+      }
+    }
+
+    .types-services-block {
+      margin: 50px 0;
+
+      .type-title-container {
+        margin-right: 6em;
+      }
+    }
+  }
+}
+
+/* Планшеты (горизонтальная ориентация) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .services-container {
+    .hero-services {
+      .img-anime-block {
+        margin-left: 0;
+
+        .anime-image-services-hero {
+          width: 500px;
+          height: 500px;
+        }
+      }
+    }
+
+    .types-services-block {
+      .type-title-container {
+        margin-right: 9em;
+      }
+    }
+  }
+}
+
+/* Очень большие экраны (мониторы 4K и больше) */
+@media (min-width: 1921px) {
+  .services-container {
+    .types-services-block {
+      .box-section {
+        .box-with-data-type {
+          width: 45%;
         }
       }
     }
