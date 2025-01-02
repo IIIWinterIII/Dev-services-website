@@ -14,8 +14,7 @@
 
   .title-contact-container {
     width: 50%;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 1em 0;
     font-size: 2.5em;
   }
 
@@ -132,6 +131,237 @@
         margin-top: 20px;
         padding: 5px;
         font-size: 1.1em;
+      }
+    }
+  }
+}
+
+/* Маленькие экраны (старые смартфоны) */
+@media (max-width: 480px) {
+  .contact-container {
+    .title-contact-container {
+      width: 80%;
+      font-size: 2.2em;
+    }
+
+    .hero-contact {
+      flex-direction: column;
+      margin-left: 0;
+
+      .contact-section {
+        .box-with-contact-mail {
+          .title-and-btn-mail {
+            display: flex;
+
+            .title-contact-mail {
+              width: 40%;
+              font-size: 1.5em;
+              margin-right: 20px;
+              margin-bottom: 5px;
+            }
+
+            .mail-a {
+              width: 160px;
+              height: 35px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 0;
+              margin: 5px 0 0 0;
+            }
+          }
+        }
+
+        .section-t-w-box {
+          .box-with-contact-t-w {
+            .title-contact {
+              width: 40%;
+              font-size: 1.5em;
+              margin-bottom: 5px;
+            }
+          }
+        }
+        .text-w-t,
+        .email-text {
+          margin-top: 0px;
+          font-size: 1em;
+        }
+      }
+
+      .anime-img {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Средние экраны (современные смартфоны) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .contact-container {
+    .title-contact-container {
+      width: 80%;
+      font-size: 2.3em;
+    }
+
+    .hero-contact {
+      flex-direction: column;
+      margin-left: 0;
+
+      .contact-section {
+        .box-with-contact-mail {
+          .title-and-btn-mail {
+            display: flex;
+
+            .title-contact-mail {
+              width: 40%;
+              font-size: 1.5em;
+              margin-right: 20px;
+              margin-bottom: 5px;
+            }
+
+            .mail-a {
+              width: 160px;
+              height: 35px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 0;
+              margin: 5px 0 0 0;
+            }
+          }
+        }
+
+        .section-t-w-box {
+          .box-with-contact-t-w {
+            .title-contact {
+              width: 40%;
+              font-size: 1.5em;
+              margin-bottom: 5px;
+            }
+          }
+        }
+        .text-w-t,
+        .email-text {
+          margin-top: 0px;
+          font-size: 1em;
+        }
+      }
+
+      .anime-img {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Планшеты (вертикальная ориентация) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-container {
+    .title-contact-container {
+      width: 80%;
+      font-size: 2.3em;
+    }
+
+    .hero-contact {
+      flex-direction: column;
+      margin-left: 0;
+
+      .contact-section {
+        .box-with-contact-mail {
+          .title-and-btn-mail {
+            display: flex;
+
+            .title-contact-mail {
+              width: 30%;
+              font-size: 1.5em;
+              margin-right: 20px;
+              margin-bottom: 5px;
+            }
+
+            .mail-a {
+              width: 160px;
+              height: 35px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 0;
+              margin: 5px 0 0 0;
+            }
+          }
+        }
+
+        .section-t-w-box {
+          .box-with-contact-t-w {
+            .title-contact {
+              width: 30%;
+              font-size: 1.5em;
+              margin-bottom: 5px;
+            }
+          }
+        }
+        .text-w-t,
+        .email-text {
+          margin-top: 0px;
+          font-size: 1em;
+        }
+      }
+
+      .anime-img {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Планшеты (горизонтальная ориентация) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .contact-container {
+    .hero-contact {
+      .contact-section {
+        .box-with-contact-mail {
+          .title-contact-mail {
+            width: 30%;
+            font-size: 1.5em;
+          }
+        }
+
+        .section-t-w-box {
+          .box-with-contact-t-w {
+            .title-contact {
+              width: 30%;
+              font-size: 1.5em;
+              margin-bottom: 5px;
+            }
+          }
+        }
+        .text-w-t,
+        .email-text {
+          margin-top: 10px;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+
+/* Ноутбуки (маленькие экраны) */
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .contact-container {
+    .hero-contact {
+      .contact-section {
+        .box-with-contact-mail {
+          .title-contact-mail {
+            width: 25%;
+          }
+        }
+
+        .section-t-w-box {
+          .box-with-contact-t-w {
+            .title-contact {
+              width: 25%;
+            }
+          }
+        }
       }
     }
   }

@@ -15,16 +15,19 @@ function Contact() {
       <div className="hero-contact">
         <div className="contact-section">
           <div className="box-with-contact-mail">
-            <h3 className="title-contact-mail">
-              E-mail
-              <FontAwesomeIcon
-                className="icon-contact-mail"
-                icon={faEnvelope}
-              />
-            </h3>
-            <a href="-" className="mail-a">
-              qwerty@gmail.com
-            </a>
+            <div className="title-and-btn-mail">
+              <h3 className="title-contact-mail">
+                E-mail
+                <FontAwesomeIcon
+                  className="icon-contact-mail"
+                  icon={faEnvelope}
+                />
+              </h3>
+              <a href="-" className="mail-a">
+                qwerty@gmail.com
+              </a>
+            </div>
+
             <p className="email-text">
               * Электронная почта — для официальной переписки, отправки
               документов и детализированных запросов
@@ -52,7 +55,7 @@ function Contact() {
           </div>
         </div>
         <div className="anime-img">
-        <ContactLottieAnimation />
+          <ContactLottieAnimation />
         </div>
       </div>
     </section>
