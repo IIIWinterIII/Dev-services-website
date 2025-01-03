@@ -38,3 +38,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+:root {
+  --background-color: rgba(0, 0, 0, 0.95);
+  --text-color: white;
+}
+
+/* Принудительно отключаем переключение темы */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: rgba(0, 0, 0, 0.95);
+    --text-color: white;
+  }
+}

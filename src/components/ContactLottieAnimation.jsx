@@ -8,7 +8,7 @@ const ContactLottieAnimation = () => {
       autoplay
       loop
       src={animationData}
-      style={{ height: "400px", width: "400px" }}
+      style={{ height: "400px", width: "400px", color: "white" }}
     />
   );
 };
