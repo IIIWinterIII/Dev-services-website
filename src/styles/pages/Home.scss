@@ -62,9 +62,9 @@
 
   .box-arrow-bottom {
     width: 100%;
-    text-align: center;
     position: relative;
-    
+    display: flex;
+    justify-content: center;
 
     .icon-chevron {
       position: absolute;
@@ -224,14 +224,12 @@
       height: auto;
       @include flex-center-center;
       flex-direction: column;
-      position: relative;
 
       .text-box-left {
         margin-left: 0;
         width: 80%;
         margin-top: 2.2em;
         padding-left: 15px;
-
 
         .title {
           font-size: 2.2em;
@@ -258,9 +256,7 @@
     }
 
     .box-arrow-bottom {
-      position: absolute;
       bottom: 0;
-      left: 0;
     }
 
     .stages-container {
@@ -288,7 +284,6 @@
       .text-box-left {
         margin-left: 0;
         padding-left: 15px;
-
 
         .title {
           font-size: 2.5em;
