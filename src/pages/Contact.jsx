@@ -23,7 +23,7 @@ function Contact() {
                   icon={faEnvelope}
                 />
               </h3>
-              <a href="-" className="mail-a">
+              <a href="mailto:nizamikas@gmail.com" className="mail-a">
                 qwerty@gmail.com
               </a>
             </div>
@@ -37,14 +37,14 @@ function Contact() {
           <div className="section-t-w-box">
             <div className="box-with-contact-t-w">
               <h3 className="title-contact">Telegram</h3>
-              <a href="-">
+              <a href="https://t.me/iwinter1">
                 <FontAwesomeIcon className="icon-contact" icon={faTelegram} />
               </a>
             </div>
 
             <div className="box-with-contact-t-w">
               <h3 className="title-contact">WhatsApp</h3>
-              <a href="-">
+              <a href="https://wa.me/79092178720">
                 <FontAwesomeIcon className="icon-contact" icon={faWhatsapp} />
               </a>
             </div>

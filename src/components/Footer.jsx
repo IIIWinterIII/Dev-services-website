@@ -22,11 +22,11 @@ function Footer() {
         </Link>
 
         <div className="messages-icon-footer">
-          <a href="-">
+          <a href="https://t.me/iwinter1">
             <FontAwesomeIcon className="icon-contact" icon={faTelegram} />
           </a>
 
-          <a href="-">
+          <a href="https://wa.me/79092178720">
             <FontAwesomeIcon className="icon-contact" icon={faWhatsapp} />
           </a>
         </div>
@@ -49,9 +49,9 @@ function Footer() {
       </div>
 
       <div className="mail-icon-container-footer">
-        <a href="-" className="mail-a-footer">
+        <a href="mailto:nizamikas@gmail.com" className="mail-a-footer">
           <FontAwesomeIcon icon={faEnvelope} className="icon-mail-footer" />
-          qwerty@gmail.com
+          nizamikas@gmail.com
         </a>
       </div>
     </footer>

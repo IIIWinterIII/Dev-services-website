@@ -43,14 +43,14 @@ function Header() {
         </ul>
       </nav>
       <div className="contacts-button">
-        <a href="-" className="con-mail">
+        <a href="mailto:nizamikas@gmail.com" className="con-mail">
           <FontAwesomeIcon className="icon mail" icon={faEnvelope} />
-          <span className="email-text">qwerty@gmail.com</span>
+          <span className="email-text">nizamikas@gmail.com</span>
         </a>
-        <a href="-" className="con-t-w">
+        <a href="https://t.me/iwinter1" className="con-t-w">
           <FontAwesomeIcon className="icon t" icon={faTelegram} />
         </a>
-        <a href="-" className="con-t-w">
+        <a href="https://wa.me/79092178720" className="con-t-w">
           <FontAwesomeIcon className="icon w" icon={faWhatsapp} />
         </a>
       </div>
