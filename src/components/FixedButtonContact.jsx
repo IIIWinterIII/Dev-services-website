@@ -5,7 +5,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function FixedButtonContact() {
   return (
-    <a className="fixed-contact-button" href="mailto:nizamikas@gmail.com">
+    <a className="fixed-contact-button" href="/contact#form">
       <div className="icon-container">
         <FontAwesomeIcon icon={faEnvelope} className="icon-fixed-button" />
       </div>

@@ -48,7 +48,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="container-form">
+    <div className="container-form" id="form">
       <form onSubmit={handleSubmit}>
         <h1 className="title-form">Заказать создание сайта</h1>
         <div className="input-border">

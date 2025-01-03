@@ -1,6 +1,6 @@
-* {
-  // border: 1px solid greenyellow;
-}
+// * {
+//   border: 1px solid greenyellow;
+// }
 
 @mixin flex-center-center {
   display: flex;
@@ -63,8 +63,12 @@
   .box-arrow-bottom {
     width: 100%;
     text-align: center;
+    position: relative;
+    
 
     .icon-chevron {
+      position: absolute;
+      top: -70px;
       font-size: 2.5em;
       animation: bounce 2s infinite;
     }

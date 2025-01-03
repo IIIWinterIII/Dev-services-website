@@ -35,7 +35,7 @@ function Services() {
           <p className="subtitle">
             Создаю сайты, которые помогают вашему бизнесу расти.
           </p>
-          <a href="mailto:nizamikas@gmail.com" className="contact-mail-btn-hero">
+          <a href="/contact#form" className="contact-mail-btn-hero">
             Связаться
           </a>
         </div>
