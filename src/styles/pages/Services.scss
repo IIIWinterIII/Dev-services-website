@@ -68,12 +68,7 @@
       .anime-image-services-hero {
         width: 600px;
         height: 600px;
-        color: black;
-
-        & svg {
-          filter: none !important; /* Убирает любые фильтры */
-          color: #000000 !important; /* Основной цвет */
-        }
+        
       }
     }
   }
