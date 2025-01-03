@@ -2,7 +2,7 @@
   "name": "dev-services-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://iiiwinteriii.github.io/Dev-services-website",
+  "homepage": "https://iiiwinteriii.github.io/Dev-services-website/",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
@@ -48,6 +48,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.2.0"
   }
 }
