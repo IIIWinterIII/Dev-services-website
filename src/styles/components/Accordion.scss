@@ -69,21 +69,34 @@
       }
     }
   }
-
-  @media (max-width: 480px) {
+}
+@media (max-width: 480px) {
+  .accordion-container {
     .accordion-title {
       text-align: center;
-      font-size: 2.3em;
+      font-size: 2em;
       margin-left: 0;
     }
 
     .accordion {
       max-width: 80%;
+
+      .accordion-item {
+        .btn {
+          font-size: 1.1em;
+        }
+
+        .answer {
+          font-size: 1em;
+        }
+      }
     }
   }
+}
 
-  /* Средние экраны (современные смартфоны) */
-  @media (min-width: 481px) and (max-width: 768px) {
+/* Средние экраны (современные смартфоны) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .accordion-container {
     .accordion-title {
       text-align: center;
       font-size: 2.3em;

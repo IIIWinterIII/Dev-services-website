@@ -30,7 +30,7 @@ function App() {
         <FixedButtonContact />
         <ContactForm />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
