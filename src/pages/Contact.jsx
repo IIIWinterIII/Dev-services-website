@@ -24,7 +24,7 @@ function Contact() {
                 />
               </h3>
               <a href="mailto:nizamikas@gmail.com" className="mail-a">
-                qwerty@gmail.com
+              nizamikas@gmail.com
               </a>
             </div>
 

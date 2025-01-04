@@ -24,7 +24,7 @@ function ContactForm() {
     setStatusMessage(""); // Очистить статус перед отправкой
 
     try {
-      const response = await fetch("https://getform.io/f/bpjjeewb", {
+      const response = await fetch("https://getform.io/f/avrrqrva", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
