@@ -2,6 +2,8 @@ import "../styles/components/Header.scss";
 
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+
+import contacts from "../contacts.js"
 import routes from "../routes";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -43,14 +45,14 @@ function Header() {
         </ul>
       </nav>
       <div className="contacts-button">
-        <a href="mailto:nizamikas@gmail.com" className="con-mail">
+        <a href={`mailto:${contacts.mail}`} className="con-mail">
           <FontAwesomeIcon className="icon mail" icon={faEnvelope} />
-          <span className="email-text">nizamikas@gmail.com</span>
+          <span className="email-text">{contacts.mail}</span>
         </a>
-        <a href="https://t.me/iwinter1" className="con-t-w">
+        <a href={contacts.telegram} className="con-t-w">
           <FontAwesomeIcon className="icon t" icon={faTelegram} />
         </a>
-        <a href="https://wa.me/79092178720" className="con-t-w">
+        <a href={contacts.whatsapp} className="con-t-w">
           <FontAwesomeIcon className="icon w" icon={faWhatsapp} />
         </a>
       </div>

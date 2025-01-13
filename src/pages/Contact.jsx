@@ -8,6 +8,8 @@ import { faTelegram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import contacts from "../contacts.js";
+
 function Contact() {
   return (
     <section className="contact-container">
@@ -23,8 +25,8 @@ function Contact() {
                   icon={faEnvelope}
                 />
               </h3>
-              <a href="mailto:nizamikas@gmail.com" className="mail-a">
-              nizamikas@gmail.com
+              <a href={`mailto:${contacts.mail}`} className="mail-a">
+              {contacts.mail}
               </a>
             </div>
 
@@ -37,14 +39,14 @@ function Contact() {
           <div className="section-t-w-box">
             <div className="box-with-contact-t-w">
               <h3 className="title-contact">Telegram</h3>
-              <a href="https://t.me/iwinter1">
+              <a href={contacts.telegram}>
                 <FontAwesomeIcon className="icon-contact" icon={faTelegram} />
               </a>
             </div>
 
             <div className="box-with-contact-t-w">
               <h3 className="title-contact">WhatsApp</h3>
-              <a href="https://wa.me/79092178720">
+              <a href={contacts.whatsapp}>
                 <FontAwesomeIcon className="icon-contact" icon={faWhatsapp} />
               </a>
             </div>

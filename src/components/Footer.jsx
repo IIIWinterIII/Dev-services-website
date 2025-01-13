@@ -10,6 +10,8 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 import routes from "../routes.js";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
+import contacts from "../contacts.js";
+
 function Footer() {
   return (
     <footer>
@@ -22,11 +24,11 @@ function Footer() {
         </Link>
 
         <div className="messages-icon-footer">
-          <a href="https://t.me/iwinter1">
+          <a href={contacts.telegram}>
             <FontAwesomeIcon className="icon-contact" icon={faTelegram} />
           </a>
 
-          <a href="https://wa.me/79092178720">
+          <a href={contacts.whatsapp}>
             <FontAwesomeIcon className="icon-contact" icon={faWhatsapp} />
           </a>
         </div>
@@ -49,9 +51,9 @@ function Footer() {
       </div>
 
       <div className="mail-icon-container-footer">
-        <a href="mailto:nizamikas@gmail.com" className="mail-a-footer">
+        <a href={`mailto:${contacts.mail}`} className="mail-a-footer">
           <FontAwesomeIcon icon={faEnvelope} className="icon-mail-footer" />
-          nizamikas@gmail.com
+          {contacts.mail}
         </a>
       </div>
     </footer>
