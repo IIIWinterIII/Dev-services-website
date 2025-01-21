@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Corporate() {
+function BussinesCard() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function Corporate() {
     );
 }
 
-export default Corporate;
+export default BussinesCard;
