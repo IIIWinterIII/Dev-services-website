@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../styles/pages/Services.scss";
 // anime img
 import ServicesLottieAnimation from "../components/ServicesLottieAnimation.jsx";
@@ -7,6 +7,7 @@ import ServicesLottieAnimation from "../components/ServicesLottieAnimation.jsx";
 import SiteTypesTable from "../components/SiteTypesTable.jsx";
 
 import servicesDataForServicesPage from "../serviceDataForServicePage.js";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Services() {
@@ -56,11 +57,9 @@ function Services() {
                 subtitle,
                 featuresTitle,
                 features,
-                prosTitle,
-                pros,
-                consTitle,
-                cons,
                 path,
+                pathInPagesInfo,
+                nameBtn,
               },
               index
             ) => (
@@ -76,7 +75,7 @@ function Services() {
                     </li>
                   ))}
                 </ul>
-                <p className="pros-title">{prosTitle}</p>
+                {/* <p className="pros-title">{prosTitle}</p>
                 <ul>
                   {pros.map((item, index) => (
                     <li className="pros-list" key={index}>
@@ -91,7 +90,10 @@ function Services() {
                       {item}
                     </li>
                   ))}
-                </ul>
+                </ul> */}
+                <Link key={index} to={pathInPagesInfo}>
+                  {nameBtn}
+                </Link>
               </div>
             )
           )}

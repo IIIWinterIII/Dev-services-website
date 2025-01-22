@@ -14,6 +14,8 @@ import FixedButtonContact from "./components/FixedButtonContact.jsx"
 // Форма заявки
 import ContactForm from "./components/ContactForm.jsx"
 
+import servicesDataForServicesPage from "./serviceDataForServicePage.js";
+
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
         <Routes>
           {routes.map(({ path, component: Component }, index) => (
             <Route key={index} path={path} element={<Component />} />
+          ))}
+          {servicesDataForServicesPage.map(({pathInPagesInfo, component: Component}, index) => (
+            <Route key={index} path={pathInPagesInfo} element={<Component />} />
           ))}
         </Routes>
         <ScrollToTopButton />

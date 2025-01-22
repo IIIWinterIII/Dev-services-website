@@ -6,6 +6,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons/faPeopleGroup";
 
+import LandingPage from "./pages/pages-info-services-individual/LandingPage.jsx";
+import BussinesCard from "./pages/pages-info-services-individual/BussinesCard.jsx";
+import Portfolio from "./pages/pages-info-services-individual/Portfolio.jsx";
+import Corporate from "./pages/pages-info-services-individual/Corporate.jsx";
+import Pwa from "./pages/pages-info-services-individual/Pwa.jsx";
+
 const servicesDataForServicesPage = [
   {
     icon: faChartLine,
@@ -31,6 +37,9 @@ const servicesDataForServicesPage = [
       "Невозможность масштабирования: трудно расширять сайт с увеличением нужд бизнеса.",
     ],
     path: "landing-page",
+    pathInPagesInfo: "/services/landing-page",
+    nameBtn: "Подробнее о Landing Page",
+    component: LandingPage,
   },
   {
     icon: faUserTie,
@@ -57,6 +66,9 @@ const servicesDataForServicesPage = [
       "SEO-ограничения: трудности с продвижением по широкому набору ключевых слов из-за ограниченного контента.",
     ],
     path: "portfolio-pages",
+    pathInPagesInfo: "/services/portfolio",
+    nameBtn: "Подробнее о portfolio",
+    component: Portfolio,
   },
   {
     icon: faAddressCard,
@@ -82,6 +94,9 @@ const servicesDataForServicesPage = [
       "Функциональные ограничения: невозможно реализовать сложные функции.",
     ],
     path: "bussines-cart-pages",
+    pathInPagesInfo: "/services/bussines-card",
+    nameBtn: "Подробнее о Bussines Card",
+    component: BussinesCard,
   },
   {
     icon: faPeopleGroup,
@@ -107,6 +122,9 @@ const servicesDataForServicesPage = [
       "Меньше гибкости в дизайне: строгий корпоративный стиль ограничивает креативность.",
     ],
     path: "corporate-pages",
+    pathInPagesInfo: "/services/corporate",
+    nameBtn: "Подробнее о Corporate",
+    component: Corporate,
   },
   {
     icon: faMobileScreen,
@@ -132,6 +150,9 @@ const servicesDataForServicesPage = [
       "SEO-проблемы: контент, доступный только в PWA, труднее индексируется поисковыми системами.",
     ],
     path: "pwa-pages",
+    pathInPagesInfo: "/services/pwa",
+    nameBtn: "Подробнее о PWA",
+    component: Pwa,
   },
 ];
 
