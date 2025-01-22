@@ -113,6 +113,12 @@
         border-color: #004ea2;
       }
     }
+
+    .privacy-policy {
+      width: 100%;
+      text-align: center;
+      font-size: 0.85em;
+    }
   }
 }
 
@@ -138,6 +144,10 @@
       padding-bottom: 30px;
       width: 85%;
       margin: 0 auto;
+
+      .privacy-policy {
+        font-size: 0.75em;
+      }
     }
   }
 }

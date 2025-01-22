@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+
 import "../styles/components/ContactForm.scss";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faUser } from "@fortawesome/free-regular-svg-icons";
 
@@ -86,6 +88,7 @@ function ContactForm() {
         </select>
 
         <button type="submit">Отправить</button>
+        <p className="privacy-policy">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
       </form>
       {statusMessage && <p className="message-result-form">{statusMessage}</p>}
     </div>
