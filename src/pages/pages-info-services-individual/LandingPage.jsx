@@ -29,25 +29,39 @@ function LandingPage() {
 
         <div className="block-with-website-templates">
           <div className="box-with-examples">
-            <img
-              className="img-preview"
-              src={`${process.env.PUBLIC_URL}/assets/images/construction.png`}
-              alt="construction"
-            />
-            <a className="button-more-details" href="https://iiiwinteriii.github.io/Construction/">
-              Посмотреть<FontAwesomeIcon className="arrow-right" icon={faArrowRight} />
-            </a> 
-            <p></p>
+            <div className="img-wrapper">
+              <img
+                className="img-preview"
+                src={`${process.env.PUBLIC_URL}/assets/images/construction.png`}
+                alt="construction"
+              />
+              <a
+                className="button-more-details"
+                href="https://iiiwinteriii.github.io/Construction/"
+              >
+                <span className="text">Посмотреть</span>
+                <FontAwesomeIcon className="arrow-right" icon={faArrowRight} />
+              </a>
+              <p></p>
+            </div>
           </div>
 
           <div className="box-with-examples">
-            <img
-              className="img-preview"
-              src={`${process.env.PUBLIC_URL}/assets/images/coffee.png`}
-              alt="coffee"
-            />
-            <a className="button-more-details" href="https://iiiwinteriii.github.io/Coffee/">Посмотреть<FontAwesomeIcon className="arrow-right" icon={faArrowRight} /></a>
-            <p></p>
+            <div className="img-wrapper">
+              <img
+                className="img-preview"
+                src={`${process.env.PUBLIC_URL}/assets/images/coffee.png`}
+                alt="coffee"
+              />
+              <a
+                className="button-more-details"
+                href="https://iiiwinteriii.github.io/Coffee/"
+              >
+                <span className="text">Посмотреть</span>
+                <FontAwesomeIcon className="arrow-right" icon={faArrowRight} />
+              </a>
+              <p></p>
+            </div>
           </div>
         </div>
       </div>
