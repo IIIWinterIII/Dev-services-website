@@ -15,6 +15,9 @@ function Header() {
   const { pathname } = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
+  console.log(pathname);
+
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -36,7 +39,8 @@ function Header() {
                 to={path}
                 component={<Component />}
                 onClick={toggleMenu}
-                className={`link ${path === pathname ? "active" : ""}`}
+                className={`link ${
+                  path === pathname || (path === "/services" && pathname === "/services/landing-page") ? "active" : ""}`}
               >
                 <span>{name}</span>
               </Link>

@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+
 import "../styles/pages/Services.scss";
+
 // anime img
 import ServicesLottieAnimation from "../components/ServicesLottieAnimation.jsx";
+
 // Таблица
 import SiteTypesTable from "../components/SiteTypesTable.jsx";
 
@@ -12,6 +15,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Services() {
   const { hash } = useLocation();
+
+  
 
   useEffect(() => {
     if (hash) {
