@@ -98,12 +98,34 @@
 
       // Бокс с данными
       .box-with-data-type {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        width: 40%;
         height: auto;
         margin: 1em;
         padding: 2em 2em;
         background-color: rgba(29, 31, 32, 0.597);
         transition: box-shadow 0.3s ease;
+
+        .title-type-box {
+          width: 100%;
+        }
+
+        .btn-for-info-pages {
+          text-decoration: none;
+          color: white;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          border: 1px solid white;
+          transition: border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+          margin-top: 30px;
+          
+        } 
 
         &:hover {
           box-shadow: 0 5px 16px rgba(0, 0, 255, 0.147);
@@ -113,28 +135,27 @@
           }
 
           .icon-top-type-box {
-            color: #007bff;
             transform: translateY(-10px);
           }
 
-          .title-type-box {
-            color: #007bff;
-          }
-
+          .btn-for-info-pages,
+          .icon-top-type-box,
+          .title-type-box,
           .features-list::before,
           .pros-list::before,
           .cons-list::before {
             color: #007bff;
           }
 
-          // Кнопка "Заказать сайт" (ещё нет)
-          // .btn-link-container {
-          //   .link-bottom-box {
-          //     .btn-bottom-box {
-          //       border-color: #007bff;
-          //     }
-          //   }
-          // }
+          .btn-for-info-pages {
+            border-color: #007bff;
+
+            &:hover {
+              border-color: #0055b1;
+              color: #0055b1; 
+              transform: scale(1.02);
+            }
+          }
         }
 
         // Иконка сверху

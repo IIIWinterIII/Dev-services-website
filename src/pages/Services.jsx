@@ -96,7 +96,9 @@ function Services() {
                     </li>
                   ))}
                 </ul> */}
-                <Link key={index} to={pathInPagesInfo}>
+ 
+ 
+                <Link className="btn-for-info-pages" key={index} to={pathInPagesInfo}>
                   {nameBtn}
                 </Link>
               </div>
