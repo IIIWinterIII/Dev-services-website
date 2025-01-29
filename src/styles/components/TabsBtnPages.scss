@@ -29,6 +29,7 @@
         height: 250px;
         overflow: hidden;
         position: relative;
+        transition: box-shadow 0.3s ease;
 
         .img-preview {
           width: 100%;
@@ -95,6 +96,9 @@
         }
 
         &:hover {
+          box-shadow: 0 0 5px 2px #007bff3a;
+
+
           .img-preview {
             transform: scale(1.05);
           }
