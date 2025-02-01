@@ -15,14 +15,14 @@ function ServicesBlock() {
               <FontAwesomeIcon icon={icon} className="icon-top-box" />
               <h2 className="box-title">{name}</h2>
               <p className="box-subtitle">{subtitle}</p>
-              <p className="featuresTitle">{featuresTitle}</p>
-              <ul>
+              {/* <p className="featuresTitle">{featuresTitle}</p> */}
+              {/* <ul>
                 {features.map((item, index) => (
                   <li className="features" key={index}>
                     {item}
                   </li>
                 ))}
-              </ul>
+              </ul> */}
               <div className="btn-link-container">
                 <Link to={`/services#${path}`} className="link-bottom-box">
                   <button className="btn-bottom-box">Подробнее </button>

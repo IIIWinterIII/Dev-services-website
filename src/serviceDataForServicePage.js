@@ -67,7 +67,7 @@ const servicesDataForServicesPage = [
     ],
     path: "portfolio-pages",
     pathInPagesInfo: "/services/portfolio",
-    nameBtn: "Подробнее о portfolio",
+    nameBtn: "Подробнее о Portfolio",
     component: Portfolio,
   },
   {

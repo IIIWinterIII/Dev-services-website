@@ -55,7 +55,7 @@ function TabsBtnPages() {
                 alt={item.alt}
               />
               <div className="description-and-button">
-              <h2 className="title-website">{item["title-website"]}</h2>
+                <h2 className="title-website">{item["title-website"]}</h2>
                 <p className="subtitle-website">{item["subtitle-website"]}</p>
                 <a className="button-more-details" href={item.href}>
                   <span className="text">Посмотреть</span>
