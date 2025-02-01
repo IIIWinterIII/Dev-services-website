@@ -1,6 +1,6 @@
-* {
+// * {
   // border: 1px solid greenyellow;
-}
+// }
 
 @mixin flex-center-center {
   display: flex;
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.landing-container-info {
+.container-info {
   width: 100%;
   @include flex-center-center;
   flex-direction: column;
@@ -67,7 +67,8 @@
       }
     }
   }
-
+  
+  .price-page,
   .landing-info {
     color: #fff;
     font-family: "Inter", sans-serif;
@@ -94,7 +95,7 @@
         width: 100%;
       }
     }
-
+    
     .landing-benefits {
       h3 {
         font-size: 34px;
@@ -116,7 +117,6 @@
       .landing-benefits-list-p {
         margin: 10px 0;
         font-size: 20px;
-
       }
     }
 

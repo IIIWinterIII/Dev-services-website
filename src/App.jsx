@@ -10,12 +10,12 @@ import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
 // Скрипт "Страница при переключении имеет top: 0"
 import PageAlwaysOnTop from "./components/PageAlwaysOnTop.jsx";
 // Фиксированная кнопка контакта
-import FixedButtonContact from "./components/FixedButtonContact.jsx"
+import FixedButtonContact from "./components/FixedButtonContact.jsx";
 // Форма заявки
-import ContactForm from "./components/ContactForm.jsx"
+import ContactForm from "./components/ContactForm.jsx";
 
 import servicesDataForServicesPage from "./serviceDataForServicePage.js";
-
+import LandingPage from "./pages/pages-info-services-individual/LandingPage.jsx";
 
 function App() {
   return (
@@ -27,8 +27,12 @@ function App() {
           {routes.map(({ path, component: Component }, index) => (
             <Route key={index} path={path} element={<Component />} />
           ))}
-          {servicesDataForServicesPage.map(({pathInPagesInfo, component: Component}, index) => (
-            <Route key={index} path={pathInPagesInfo} element={<Component />} />
+          {servicesDataForServicesPage.map(({ pathInPagesInfo }, index) => (
+            <Route
+              key={index}
+              path={pathInPagesInfo}
+              element={<LandingPage />}
+            />
           ))}
         </Routes>
         <ScrollToTopButton />

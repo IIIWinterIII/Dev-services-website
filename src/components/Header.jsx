@@ -10,13 +10,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp, faTelegram } from "@fortawesome/free-brands-svg-icons";
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
+import dataTypePages from "../siteTypeDataForOnePage.js";
 
 function Header() {
   const { pathname } = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log(pathname);
+  
 
+  console.log("pathname: >>>", pathname);
+  console.log("dataTypePages: >>>", Object.keys(dataTypePages)[0]);
+  console.log("Сравнение:", pathname === Object.keys(dataTypePages)[0]);
+  console.log("Тип pathname:", typeof pathname);
+  console.log("Тип dataTypePages[0]:", typeof Object.keys(dataTypePages)[0]);
+  
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -34,13 +41,15 @@ function Header() {
       <nav className={`navigation ${isOpen ? "open" : ""}`}>
         <ul>
           {routes.map(({ path, name, component: Component }, index) => (
+            
             <li key={index}>
               <Link
                 to={path}
                 component={<Component />}
                 onClick={toggleMenu}
                 className={`link ${
-                  path === pathname || (path === "/services" && pathname === "/services/landing-page") ? "active" : ""}`}
+                  path === pathname || 
+                  (path === "/services" && Object.keys(dataTypePages).some(servicePath => pathname === servicePath)) ? "active" : ""}`}
               >
                 <span>{name}</span>
               </Link>
