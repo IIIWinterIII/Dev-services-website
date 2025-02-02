@@ -3,9 +3,19 @@ const websiteTemplatesLP = [
   {
     "title-keis-preview": "Шаблоны",
     type: "landing-page" || "bussines-card",
+    "img-preview": "/assets/images/bakery.png",
+    alt: "Bakery",
+    "title-website": "Пекарня",
+    "subtitle-website":
+      "Одностраничный шаблон для пекарни с уютным дизайном, содержащий меню, историю, отзывы клиентов и форму заказа.",
+    href: "https://iiiwinteriii.github.io/bakery/",
+  },
+  {
+    "title-keis-preview": "Шаблоны",
+    type: "landing-page" || "bussines-card",
     "img-preview": "/assets/images/construction.png",
     alt: "Construction",
-    "title-website": "Construction",
+    "title-website": "Строительство",
     "subtitle-website":
       "Одностраничный шаблон для строительной компании с современным дизайном, содержащий информацию об услугах, портфолио, отзывы клиентов и форму обратной связи.",
     href: "https://iiiwinteriii.github.io/Construction/",
@@ -15,7 +25,7 @@ const websiteTemplatesLP = [
     type: "landing-page" || "bussines-card",
     "img-preview": "/assets/images/coffee.png",
     alt: "Coffee",
-    "title-website": "Coffee",
+    "title-website": "Кофе",
     "subtitle-website":
       "Одностраничный шаблон для кофейни с уютным дизайном, включающий меню, акции, отзывы посетителей и форму для бронирования.",
     href: "https://iiiwinteriii.github.io/Coffee/",

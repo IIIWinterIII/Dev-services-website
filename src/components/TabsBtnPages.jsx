@@ -16,7 +16,7 @@ function TabsBtnPages() {
 
   return (
     <div className="keis-preview">
-      <h1 className="title-keis-preview">Шаблоны</h1>
+      <h1 className="title-keis-preview">Все шаблоны</h1>
 
       <div className="block-with-website-templates">
         {templates.map((item, index) => (
@@ -43,7 +43,7 @@ function TabsBtnPages() {
         ))}
       </div>
 
-      <h1 className="title-keis-preview">Макеты</h1>
+      <h1 className="title-keis-preview">Все макеты</h1>
 
       <div className="block-with-website-templates">
         {mockups.map((item, index) => (
