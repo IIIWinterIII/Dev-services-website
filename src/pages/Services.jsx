@@ -16,8 +16,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Services() {
   const { hash } = useLocation();
 
-  
-
   useEffect(() => {
     if (hash) {
       const element = document.querySelector(hash);
@@ -96,9 +94,12 @@ function Services() {
                     </li>
                   ))}
                 </ul> */}
- 
- 
-                <Link className="btn-for-info-pages" key={index} to={pathInPagesInfo}>
+
+                <Link
+                  className="btn-for-info-pages"
+                  key={index}
+                  to={pathInPagesInfo}
+                >
                   {nameBtn}
                 </Link>
               </div>

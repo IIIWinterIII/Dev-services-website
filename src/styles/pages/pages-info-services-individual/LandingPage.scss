@@ -1,5 +1,5 @@
 // * {
-  // border: 1px solid greenyellow;
+// border: 1px solid greenyellow;
 // }
 
 @mixin flex-center-center {
@@ -67,8 +67,7 @@
       }
     }
   }
-  
-  .price-page,
+
   .landing-info {
     color: #fff;
     font-family: "Inter", sans-serif;
@@ -95,7 +94,7 @@
         width: 100%;
       }
     }
-    
+
     .landing-benefits {
       h3 {
         font-size: 34px;
@@ -153,6 +152,621 @@
         min-width: 230px;
         border-right: 1px solid #007bff;
         margin-right: 10px;
+      }
+    }
+  }
+
+  .price-page {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 60%;
+    margin: 0 auto;
+
+    .landing-benefits {
+      h3 {
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 15px;
+        position: relative;
+      }
+
+      &:hover {
+        h3::after {
+          width: 100%;
+        }
+      }
+
+      h3::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 1px;
+        background-color: #007bff;
+        margin-top: 5px;
+        transition: width 0.3s ease;
+      }
+
+      .landing-benefits-list-p {
+        margin: 10px 0;
+        font-size: 1.5em;
+      }
+
+      // ul
+      .landing-benefits-list {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 2em;
+
+        li {
+          font-size: 1.4em;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          position: relative;
+          border: 1px solid #007bff;
+          padding: 15px;
+          transition: transform 0.3s ease;
+
+          &::before {
+            content: "✔"; // Иконка галочки
+            color: #007bff;
+            font-size: 1.4em;
+          }
+
+          &:hover {
+            transform: scale(1.02);
+          }
+        }
+
+        span {
+          font-weight: 600;
+          color: #007bff;
+          min-width: 300px;
+          border-right: 1px solid #007bff;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* Маленькие экраны (старые смартфоны) */
+@media (max-width: 480px) {
+  .container-info {
+    .hero-section-landing {
+      flex-direction: column;
+      height: auto;
+
+      .text-hero-block {
+        width: 80%;
+        margin: 3em 0 1em;
+
+        .title-hero {
+          font-size: 2.2em;
+          margin-left: 1.1em;
+        }
+
+        .subtitle-hero {
+          font-size: 1.3em;
+          margin-left: 1.7em;
+        }
+
+        .contact-mail-btn-hero {
+          width: 70%;
+          height: 45px;
+          margin: 3em auto 1em;
+        }
+      }
+
+      .img-anime-block {
+        .display-adaptation-lottie-animation {
+          width: 400px;
+          height: 400px;
+        }
+      }
+    }
+
+    .landing-info {
+      max-width: 70%;
+      margin-top: 4em;
+
+      .landing-description > h2 {
+        font-size: 1.2em;
+
+        span {
+          font-size: 1.3rem;
+        }
+      }
+
+      .landing-benefits {
+        margin-top: 4em;
+
+        h3 {
+          font-size: 1.5em;
+        }
+
+        .landing-benefits-list-p {
+          font-size: 1.3em;
+        }
+      }
+
+      .landing-benefits-list {
+        margin-top: 1.5em;
+
+        li {
+          font-size: 1em;
+          margin-bottom: 40px;
+          flex-direction: column;
+          text-align: center;
+
+          &::before {
+            content: "✔"; // Иконка галочки
+            font-size: 1.2em;
+          }
+        }
+
+        span {
+          width: 80%;
+          text-align: center;
+          border-bottom: 1px solid #007bff;
+          border-right: none;
+          margin-right: 0;
+          margin-bottom: 0.5em;
+          padding-bottom: 0.5em;
+        }
+      }
+    }
+
+    // Price
+    .price-page {
+      width: 70%;
+      margin-top: 4em;
+
+      .landing-benefits {
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        .landing-benefits-list-p {
+          font-size: 1.2em;
+        }
+
+        // ul
+        .landing-benefits-list {
+          margin-top: 1.5em;
+
+          li {
+            font-size: 1em;
+            margin-bottom: 40px;
+
+            &::before {
+              margin: 0 5%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Средние экраны (современные смартфоны) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container-info {
+    .hero-section-landing {
+      flex-direction: column;
+      height: auto;
+
+      .text-hero-block {
+        width: 80%;
+        margin: 5em 0;
+
+        .title-hero {
+          font-size: 2.5em;
+          margin-left: 0.5em;
+        }
+
+        .subtitle-hero {
+          font-size: 1.4em;
+          margin-left: 0.9em;
+        }
+
+        .contact-mail-btn-hero {
+          width: 350px;
+          height: 45px;
+          margin: 3em auto 1em;
+        }
+      }
+
+      .img-anime-block {
+        .display-adaptation-lottie-animation {
+          width: 400px;
+          height: 400px;
+        }
+      }
+    }
+
+    .landing-info {
+      max-width: 75%;
+      margin-top: 4em;
+
+      .landing-description > h2 {
+        font-size: 1.4em;
+
+        span {
+          font-size: 1.6rem;
+        }
+      }
+
+      .landing-benefits {
+        margin-top: 4em;
+
+        h3 {
+          font-size: 1.7em;
+        }
+
+        .landing-benefits-list-p {
+          font-size: 1.5em;
+        }
+      }
+
+      .landing-benefits-list {
+        margin-top: 1.5em;
+
+        li {
+          font-size: 1.2em;
+          margin-bottom: 40px;
+          flex-direction: column;
+          text-align: center;
+
+          &::before {
+            content: "✔"; // Иконка галочки
+            font-size: 1.3em;
+          }
+        }
+
+        span {
+          width: 80%;
+          text-align: center;
+          border-bottom: 1px solid #007bff;
+          border-right: none;
+          margin-right: 0;
+          margin-bottom: 0.5em;
+          padding-bottom: 0.5em;
+        }
+      }
+    }
+
+    // Price
+    .price-page {
+      width: 75%;
+      margin-top: 4em;
+
+      .landing-benefits {
+        h3 {
+          font-size: 1.6rem;
+        }
+
+        .landing-benefits-list-p {
+          font-size: 1.4em;
+        }
+
+        // ul
+        .landing-benefits-list {
+          margin-top: 1.5em;
+
+          li {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+
+            &::before {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Планшеты (вертикальная ориентация) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container-info {
+    .hero-section-landing {
+      flex-direction: column;
+      height: auto;
+
+      .text-hero-block {
+        width: 530px;
+        margin: 5em 0 5em 0;
+
+        .title-hero {
+          font-size: 3em;
+          margin-left: 1em;
+        }
+
+        .subtitle-hero {
+          font-size: 1.5em;
+          margin-left: 2em;
+        }
+
+        .contact-mail-btn-hero {
+          width: 350px;
+          height: 45px;
+          margin: 3em auto 1em;
+        }
+      }
+
+      .img-anime-block {
+        .display-adaptation-lottie-animation {
+          width: 550px;
+          height: 550px;
+        }
+      }
+    }
+
+    .landing-info {
+      max-width: 70%;
+
+      .landing-description > h2 {
+        font-size: 1.6em;
+
+        span {
+          font-size: 1.7rem;
+        }
+      }
+
+      .landing-benefits {
+        h3 {
+          font-size: 1.7em;
+        }
+
+        .landing-benefits-list-p {
+          font-size: 1.5em;
+        }
+      }
+
+      .landing-benefits-list {
+        margin-top: 1.5em;
+
+        li {
+          font-size: 1.3em;
+          margin-bottom: 20px;
+          flex-direction: column;
+          text-align: center;
+
+          &::before {
+            content: "✔"; // Иконка галочки
+            font-size: 1.3em;
+          }
+        }
+
+        span {
+          width: 80%;
+          text-align: center;
+          border-bottom: 1px solid #007bff;
+          border-right: none;
+          margin-right: 0;
+          margin-bottom: 0.5em;
+          padding-bottom: 0.5em;
+        }
+      }
+    }
+
+    // Price
+    .price-page {
+      width: 70%;
+
+      .landing-benefits {
+        h3 {
+          font-size: 1.7rem;
+        }
+
+        .landing-benefits-list-p {
+          font-size: 1.5em;
+        }
+
+        // ul
+        .landing-benefits-list {
+          margin-top: 1.5em;
+
+          li {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Планшеты (горизонтальная ориентация) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .container-info {
+    .hero-section-landing {
+      flex-direction: column;
+      height: auto;
+
+      .text-hero-block {
+        width: 530px;
+        margin: 5em 0 5em 0;
+
+        .title-hero {
+          font-size: 3em;
+          margin-left: 1em;
+        }
+
+        .subtitle-hero {
+          font-size: 1.5em;
+          margin-left: 2em;
+        }
+
+        .contact-mail-btn-hero {
+          width: 350px;
+          height: 45px;
+          margin: 3em auto 1em;
+        }
+      }
+
+      .img-anime-block {
+        .display-adaptation-lottie-animation {
+          width: 600px;
+          height: 600px;
+        }
+      }
+    }
+
+    .landing-info {
+      max-width: 75%;
+
+      .landing-description > h2 {
+        font-size: 1.6em;
+
+        span {
+          font-size: 1.7rem;
+        }
+      }
+
+      .landing-benefits {
+        h3 {
+          font-size: 1.7em;
+        }
+
+        .landing-benefits-list-p {
+          font-size: 1.5em;
+        }
+      }
+
+      .landing-benefits-list {
+        margin-top: 1.5em;
+
+        li {
+          font-size: 1.3em;
+          margin-bottom: 20px;
+
+          &::before {
+            content: "✔"; // Иконка галочки
+            font-size: 1.3em;
+          }
+        }
+
+        span {
+          min-width: 300px;
+        }
+      }
+    }
+
+    // Price
+    .price-page {
+      .landing-benefits {
+        h3 {
+          font-size: 1.7rem;
+        }
+
+        .landing-benefits-list-p {
+          font-size: 1.5em;
+        }
+
+        // ul
+        .landing-benefits-list {
+          margin-top: 1.5em;
+
+          li {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Очень большие экраны (мониторы 4K и больше) */
+@media (min-width: 1921px) {
+  .container-info {
+    .hero-section-landing {
+      .text-hero-block {
+        width: 730px;
+
+        .title-hero {
+          font-size: 3em;
+        }
+
+        .subtitle-hero {
+          font-size: 1.5em;
+        }
+
+        .contact-mail-btn-hero {
+          width: 350px;
+          height: 45px;
+        }
+      }
+
+      .img-anime-block {
+        .display-adaptation-lottie-animation {
+          width: 600px;
+          height: 600px;
+        }
+      }
+    }
+
+    .landing-info {
+      max-width: 60%;
+
+      .landing-description > h2 {
+        font-size: 1.7em;
+
+        span {
+          font-size: 1.9rem;
+        }
+      }
+
+      .landing-benefits {
+        h3 {
+          font-size: 1.8em;
+        }
+
+        .landing-benefits-list-p {
+          font-size: 1.5em;
+        }
+      }
+
+      .landing-benefits-list {
+        margin-top: 2em;
+
+        li {
+          font-size: 1.4em;
+          margin-bottom: 20px;
+
+          &::before {
+            content: "✔"; // Иконка галочки
+            font-size: 1.4em;
+          }
+        }
+
+        span {
+          min-width: 300px;
+        }
+      }
+    }
+
+    // Price
+    .price-page {
+      .landing-benefits {
+        h3 {
+          font-size: 1.8em;
+        }
+
+        // ul
+        .landing-benefits-list {
+          li {
+            margin-bottom: 20px;
+          }
+        }
       }
     }
   }
