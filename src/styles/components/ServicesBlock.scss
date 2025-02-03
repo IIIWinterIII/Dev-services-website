@@ -172,8 +172,8 @@
           &::before {
             content: "Мои услуги дешевле за счёт отсутствия затрат на офис, посредников и из-за гибкости в работе с индивидуальным подходом.";
             position: absolute;
-            top: -65px;
-            left: -135px;
+            top: -90px;
+            left: -150px;
             width: 300px;
             height: auto;
             transform: translateX(-50%);
@@ -249,6 +249,14 @@
         .price-block {
           margin: 2em 0;
           font-size: 1.4em;
+
+          .block-fa {
+            font-size: 1.1em;
+  
+              &::before {
+                top: -90px;
+              }
+            }
         }
       }
     }
@@ -272,6 +280,14 @@
 
         .price-block {
           font-size: 1.2em;
+
+          .block-fa {
+          font-size: 1.2em;
+
+            &::before {
+              top: -90px;
+            }
+          }
         }
       }
     }
@@ -302,6 +318,14 @@
 
         .price-block {
           font-size: 1.3em;
+
+          .block-fa {
+          font-size: 1.2em;
+
+            &::before {
+              top: -120px;
+            }
+          }
         }
       }
     }
