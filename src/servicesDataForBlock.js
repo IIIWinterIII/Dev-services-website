@@ -19,6 +19,8 @@ const servicesDataForBlock = [
       "Лёгкий и динамичный дизайн, адаптированный под мобильные устройства",
     ],
     path: "landing-page",
+    remPrice : "25 000 ₽",
+    actPrice: "8 000 ₽",
   },
   {
     icon: faUserTie,
@@ -33,6 +35,8 @@ const servicesDataForBlock = [
       "Подходит для фотографов, дизайнеров, программистов и других специалистов",
     ],
     path: "portfolio-pages",
+    remPrice : "30 000 ₽",
+    actPrice: "10 000 ₽",
   },
   {
     icon: faAddressCard,
@@ -46,6 +50,8 @@ const servicesDataForBlock = [
       "Часто используется фрилансерами, небольшими компаниями и индивидуальными предпринимателями",
     ],
     path: "bussines-cart-pages",
+    remPrice : "28 000 ₽",
+    actPrice: "9 000 ₽",
   },
   {
     icon: faPeopleGroup,
@@ -59,6 +65,8 @@ const servicesDataForBlock = [
       "Применяется средними и крупными компаниями для построения доверия и повышения узнаваемости",
     ],
     path: "corporate-pages",
+    remPrice : "50 000 ₽",
+    actPrice: "15 000 ₽",
   },
   {
     icon: faMobileScreen,
@@ -72,6 +80,8 @@ const servicesDataForBlock = [
       "Высокая скорость загрузки и отзывчивость интерфейса",
     ],
     path: "pwa-pages",
+    remPrice : "70 000 ₽",
+    actPrice: "18 000 ₽",
   },
 ];
 export default servicesDataForBlock;
