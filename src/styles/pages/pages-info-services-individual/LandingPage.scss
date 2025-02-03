@@ -202,7 +202,7 @@
         margin-top: 2em;
 
         li {
-          font-size: 1.4em;
+          font-size: 1.1em;
           margin-bottom: 10px;
           display: flex;
           align-items: center;
@@ -678,6 +678,24 @@
           li {
             font-size: 1.3em;
             margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1920px) {
+  .container-info {
+    // Price
+    .price-page {
+      .landing-benefits {
+        // ul
+        .landing-benefits-list {
+          li {
+            width: 70%;
+            font-size: 1.1em;
+            margin: 0 auto 10px;
           }
         }
       }
