@@ -140,11 +140,25 @@
           transition: color 0.3s ease;
           border-radius: 50%;
 
+          &:active,
+          &:focus {
+            background-color: transparent;
+            outline: none;
+            box-shadow: none;
+          }
+
           .fa-circle-question {
             width: 100%;
             height: 100%;
             cursor: pointer;
             border-radius: 50%;
+
+            &:active,
+            &:focus {
+              background-color: transparent;
+              outline: none;
+              box-shadow: none;
+            }
           }
 
           &:hover {
