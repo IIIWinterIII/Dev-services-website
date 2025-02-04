@@ -7,10 +7,10 @@ import {
 import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons/faPeopleGroup";
 
 import LandingPage from "./pages/pages-info-services-individual/LandingPage.jsx";
-import BussinesCard from "./pages/pages-info-services-individual/BussinesCard.jsx";
-import Portfolio from "./pages/pages-info-services-individual/Portfolio.jsx";
-import Corporate from "./pages/pages-info-services-individual/Corporate.jsx";
-import Pwa from "./pages/pages-info-services-individual/Pwa.jsx";
+// import BussinesCard from "./pages/pages-info-services-individual/BussinesCard.jsx";
+// import Portfolio from "./pages/pages-info-services-individual/Portfolio.jsx";
+// import Corporate from "./pages/pages-info-services-individual/Corporate.jsx";
+// import Pwa from "./pages/pages-info-services-individual/Pwa.jsx";
 
 const servicesDataForServicesPage = [
   {
@@ -68,7 +68,7 @@ const servicesDataForServicesPage = [
     path: "portfolio-pages",
     pathInPagesInfo: "/services/portfolio",
     nameBtn: "Подробнее о Portfolio",
-    component: Portfolio,
+    // component: Portfolio,
   },
   {
     icon: faAddressCard,
@@ -96,7 +96,7 @@ const servicesDataForServicesPage = [
     path: "bussines-cart-pages",
     pathInPagesInfo: "/services/bussines-card",
     nameBtn: "Подробнее о Bussines Card",
-    component: BussinesCard,
+    // component: BussinesCard,
   },
   {
     icon: faPeopleGroup,
@@ -124,7 +124,7 @@ const servicesDataForServicesPage = [
     path: "corporate-pages",
     pathInPagesInfo: "/services/corporate",
     nameBtn: "Подробнее о Corporate",
-    component: Corporate,
+    // component: Corporate,
   },
   {
     icon: faMobileScreen,
@@ -152,7 +152,7 @@ const servicesDataForServicesPage = [
     path: "pwa-pages",
     pathInPagesInfo: "/services/pwa",
     nameBtn: "Подробнее о PWA",
-    component: Pwa,
+    // component: Pwa,
   },
 ];
 

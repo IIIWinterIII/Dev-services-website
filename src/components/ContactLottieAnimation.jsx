@@ -1,13 +1,14 @@
 import React from "react";
-import { Player } from "@lottiefiles/react-lottie-player";
-import animationData from "../assets/animation-IMG/contact-img-animation.json";
+
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
 
 const ContactLottieAnimation = () => {
   return (
-    <Player
+    <DotLottieReact
       autoplay
       loop
-      src={animationData}
+      src="https://lottie.host/7e335a3a-3970-46ef-b90d-a7e3def7142a/Ar4n7BvtKe.lottie"
       style={{ height: "400px", width: "400px", color: "white" }}
     />
   );
