@@ -217,8 +217,63 @@
     width: 100%;
   }
 
+  @media (min-width: 320px) and (max-width: 449px) {
+    .hero-home {
+      width: 100%;
+      height: auto;
+      @include flex-center-center;
+      flex-direction: column;
+
+      .text-box-left {
+        margin-left: 0;
+        width: 80%;
+        margin-top: 2.2em;
+        padding-left: 15px;
+
+        .title {
+          font-size: 2em;
+          margin-bottom: 0.5em;
+        }
+
+        .subtitle {
+          font-size: 1.2em;
+        }
+
+        .subtitle-bottom {
+          font-size: 1em;
+        }
+      }
+
+      .img-anime-block {
+        margin-left: 0;
+
+        .home-lottie-animation-player {
+          height: 330px;
+          width: 330px;
+        }
+      }
+    }
+
+    .box-arrow-bottom {
+      bottom: 0;
+    }
+
+    .stages-container {
+      margin: 5em 0 7em;
+
+      .stages-container-title {
+        width: 80%;
+        text-align: center;
+        font-size: 2em;
+        margin-left: 0;
+        margin: auto;
+        padding: 2em 0 0.5em;
+      }
+    }
+  }
+
   /* Маленькие экраны (старые смартфоны) */
-  @media (max-width: 480px) {
+  @media (min-width: 450px) and (max-width: 480px) {
     .hero-home {
       width: 100%;
       height: auto;

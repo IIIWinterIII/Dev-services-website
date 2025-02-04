@@ -1,5 +1,5 @@
 // * {
-  // border: 1px solid greenyellow;
+// border: 1px solid greenyellow;
 // }
 
 .services-block-container {
@@ -30,7 +30,6 @@
       padding: 2em 2em;
       background-color: rgba(29, 31, 32, 0.597);
       transition: box-shadow 0.3s ease;
-
 
       &:hover {
         box-shadow: 0 5px 16px rgba(0, 0, 255, 0.147);
@@ -167,7 +166,6 @@
 
             &::before {
               opacity: 1;
-
             }
           }
 
@@ -240,8 +238,41 @@
   }
 }
 
+@media (min-width: 320px) and (max-width: 449px) {
+  .services-block-container {
+    .box-container {
+      width: 100%;
+
+      .box-services {
+        width: 80%;
+
+        .price-block {
+          margin: 2em 0;
+          font-size: 1em;
+
+          .block-fa {
+            font-size: 1.1em;
+            width: 15px;
+            height: 15px;
+
+            &::before {
+              top: -90px;
+            }
+          }
+        }
+      }
+    }
+
+    .title-container {
+      width: 80%;
+      margin-right: 0;
+      font-size: 2em;
+    }
+  }
+}
+
 /* Маленькие экраны (старые смартфоны) */
-@media (max-width: 480px) {
+@media (min-width: 450px) and (max-width: 480px) {
   .services-block-container {
     .box-container {
       width: 100%;
@@ -255,11 +286,11 @@
 
           .block-fa {
             font-size: 1.1em;
-  
-              &::before {
-                top: -90px;
-              }
+
+            &::before {
+              top: -90px;
             }
+          }
         }
       }
     }
@@ -285,7 +316,7 @@
           font-size: 1.2em;
 
           .block-fa {
-          font-size: 1.2em;
+            font-size: 1.2em;
 
             &::before {
               top: -90px;
@@ -323,7 +354,7 @@
           font-size: 1.3em;
 
           .block-fa {
-          font-size: 1.2em;
+            font-size: 1.2em;
 
             &::before {
               top: -120px;
