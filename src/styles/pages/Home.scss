@@ -52,10 +52,14 @@
     .img-anime-block {
       // width: 50%;
       margin-left: 3em;
+      filter: none !important;
+      mix-blend-mode: normal !important;
 
       .home-lottie-animation-player {
         height: 600px;
         width: 600px;
+        filter: none !important;
+        mix-blend-mode: normal !important;
       }
     }
   }

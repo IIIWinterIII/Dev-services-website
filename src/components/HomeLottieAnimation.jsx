@@ -10,7 +10,6 @@ const HomeLottieAnimation = () => {
       loop
       src={animationData}
       className="home-lottie-animation-player"
-      // style={{ height: "600px", width: "600px" }}
     />
   );
 };
