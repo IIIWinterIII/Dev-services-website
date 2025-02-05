@@ -20,7 +20,7 @@ const servicesDataForBlock = [
     ],
     path: "landing-page",
     remPrice : "25 000 ₽",
-    actPrice: "8 000 ₽",
+    actPrice: "5 000 ₽",
   },
   {
     icon: faUserTie,
@@ -36,7 +36,7 @@ const servicesDataForBlock = [
     ],
     path: "portfolio-pages",
     remPrice : "30 000 ₽",
-    actPrice: "10 000 ₽",
+    actPrice: "8 000 ₽",
   },
   {
     icon: faAddressCard,
@@ -51,7 +51,7 @@ const servicesDataForBlock = [
     ],
     path: "bussines-cart-pages",
     remPrice : "28 000 ₽",
-    actPrice: "9 000 ₽",
+    actPrice: "7 000 ₽",
   },
   {
     icon: faPeopleGroup,
@@ -66,7 +66,7 @@ const servicesDataForBlock = [
     ],
     path: "corporate-pages",
     remPrice : "50 000 ₽",
-    actPrice: "15 000 ₽",
+    actPrice: "14 000 ₽",
   },
   {
     icon: faMobileScreen,
