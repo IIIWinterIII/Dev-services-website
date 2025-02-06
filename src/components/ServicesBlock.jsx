@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/components/ServicesBlock.scss";
+
 import servicesDataForBlock from "../servicesDataForBlock";
+
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
@@ -25,7 +27,10 @@ function ServicesBlock() {
             index
           ) => (
             <div className="box-services" key={index}>
-              <FontAwesomeIcon icon={icon} className="icon-top-box" />
+              <div className="containet-icons-box-services">
+              <FontAwesomeIcon icon={icon} className={`icon-top-box ${name === "Tilda" ? "tildaStyle" : ""}`} />
+
+              </div>
               <h2 className="box-title">{name}</h2>
               <p className="box-subtitle">{subtitle}</p>
               {/* <p className="featuresTitle">{featuresTitle}</p> */}

@@ -2,11 +2,28 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
 import {
   faChartLine,
   faMobileScreen,
+  faT,
   faUserTie,
+  
 } from "@fortawesome/free-solid-svg-icons";
 import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons/faPeopleGroup";
 
 const servicesDataForBlock = [
+  {
+    icon: faT,
+    name: "Tilda",
+    subtitle:
+      "Tilda — это удобное и стильное решение для бизнеса без необходимости в сложной разработке. Подходит для лендингов, портфолио, корпоративных страниц и интернет-магазинов. Благодаря визуальному редактору и готовым блокам создаётся быстро и эффективно.",
+    featuresTitle: "Основные особенности:",
+    features: [
+      "Современный дизайн с возможностью индивидуальной настройки под ваш бренд",
+      "Адаптивный дизайн, отлично выглядящий на всех устройствах",
+      "Интеграции с CRM, платёжными системами и аналитикой",
+    ],
+    path: "tilda-site",
+    remPrice: "16 000 ₽",
+    actPrice: "3 000 ₽",
+  },
   {
     icon: faChartLine,
     name: "Landing Page",
@@ -19,7 +36,7 @@ const servicesDataForBlock = [
       "Лёгкий и динамичный дизайн, адаптированный под мобильные устройства",
     ],
     path: "landing-page",
-    remPrice : "25 000 ₽",
+    remPrice: "25 000 ₽",
     actPrice: "5 000 ₽",
   },
   {
@@ -35,7 +52,7 @@ const servicesDataForBlock = [
       "Подходит для фотографов, дизайнеров, программистов и других специалистов",
     ],
     path: "portfolio-pages",
-    remPrice : "30 000 ₽",
+    remPrice: "30 000 ₽",
     actPrice: "8 000 ₽",
   },
   {
@@ -50,7 +67,7 @@ const servicesDataForBlock = [
       "Часто используется фрилансерами, небольшими компаниями и индивидуальными предпринимателями",
     ],
     path: "bussines-cart-pages",
-    remPrice : "28 000 ₽",
+    remPrice: "28 000 ₽",
     actPrice: "7 000 ₽",
   },
   {
@@ -65,7 +82,7 @@ const servicesDataForBlock = [
       "Применяется средними и крупными компаниями для построения доверия и повышения узнаваемости",
     ],
     path: "corporate-pages",
-    remPrice : "50 000 ₽",
+    remPrice: "50 000 ₽",
     actPrice: "14 000 ₽",
   },
   {
@@ -80,7 +97,7 @@ const servicesDataForBlock = [
       "Высокая скорость загрузки и отзывчивость интерфейса",
     ],
     path: "pwa-pages",
-    remPrice : "70 000 ₽",
+    remPrice: "70 000 ₽",
     actPrice: "18 000 ₽",
   },
 ];

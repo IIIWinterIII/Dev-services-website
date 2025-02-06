@@ -42,9 +42,15 @@
           }
         }
 
-        .icon-top-box {
-          color: #007bff;
-          transform: translateY(-10px);
+        .containet-icons-box-services {
+          .icon-top-box {
+            color: #007bff;
+            transform: translateY(-10px);
+          }
+
+          .icon-top-box.tildaStyle {
+            border-color: #007bff;
+          }
         }
 
         .features::before {
@@ -64,13 +70,30 @@
         }
       }
 
-      .icon-top-box {
-        font-size: 4em;
-        margin-left: 5px;
-        padding-bottom: 10px;
-        transition: color 0.3s ease, transform 0.3s ease;
-      }
+      .containet-icons-box-services {
+        min-height: 80px;
 
+        .icon-top-box {
+          font-size: 4em;
+          margin-left: 5px;
+          margin-bottom: 10px;
+          transition: border-color 0.3s ease, color 0.3s ease,
+            transform 0.3s ease;
+        }
+
+        // * {
+        //   border: 1px solid greenyellow;
+        // }
+
+        .icon-top-box.tildaStyle {
+          font-size: 2.5em;
+          border: 4px solid white;
+          border-radius: 50%;
+          padding: 10px 15px;
+          margin-left: 0;
+        }
+      }
+      
       .box-title {
         padding: 0 0 25px;
         font-size: 1.6em;
