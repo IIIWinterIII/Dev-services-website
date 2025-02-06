@@ -1,4 +1,15 @@
 const websiteTemplatesLP = [
+  // Tilda
+  {
+    "title-keis-preview": "Tilda",
+    type: "landing-page" || "bussines-card",
+    "img-preview": "/assets/images/Coffee-Tilda.png",
+    alt: "Coffee Tilda",
+    "title-website": "Кофейня на Tilda",
+    "subtitle-website":
+      "Современный сайт для кофейни с меню, командой и предстоящими мероприятиями",
+    href: "https://project8198265.tilda.ws/",
+  },
   // ШАБЛОНЫ
   {
     "title-keis-preview": "Шаблоны",

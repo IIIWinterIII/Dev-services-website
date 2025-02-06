@@ -134,10 +134,18 @@
             width: 100%;
           }
 
-          .icon-top-type-box {
-            transform: translateY(-10px);
+          .containet-icons-box-services {
+
+            .icon-top-type-box {
+              transform: translateY(-10px);
+            }
+
+            .icon-top-type-box.tildaStyle {
+              border-color: #007bff;
+            }
           }
 
+          
           .btn-for-info-pages,
           .icon-top-type-box,
           .title-type-box,
@@ -146,6 +154,8 @@
           .cons-list::before {
             color: #007bff;
           }
+
+          
 
           .btn-for-info-pages {
             border-color: #007bff;
@@ -158,13 +168,26 @@
           }
         }
 
+        
+      .containet-icons-box-services {
+        min-height: 80px;
+
         // Иконка сверху
         .icon-top-type-box {
           font-size: 4em;
           margin-left: 5px;
           padding-bottom: 10px;
-          transition: color 0.3s ease, transform 0.3s ease;
+          transition: border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
         }
+
+        .icon-top-type-box.tildaStyle {
+          font-size: 2.5em;
+          border: 3.5px solid white;
+          border-radius: 50%;
+          padding: 10px 15px;
+          margin-left: 0;
+        }
+      }
 
         // Тип сайта (заголовок)
         .title-type-box {

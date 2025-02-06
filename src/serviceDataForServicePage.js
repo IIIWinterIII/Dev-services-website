@@ -2,6 +2,7 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
 import {
   faChartLine,
   faMobileScreen,
+  faT,
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons";
 import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons/faPeopleGroup";
@@ -13,6 +14,21 @@ import LandingPage from "./pages/pages-info-services-individual/LandingPage.jsx"
 // import Pwa from "./pages/pages-info-services-individual/Pwa.jsx";
 
 const servicesDataForServicesPage = [
+  {
+      icon: faT,
+      name: "Tilda",
+      subtitle:
+        "Tilda — это удобное и стильное решение для бизнеса без необходимости в сложной разработке. Подходит для лендингов, портфолио, корпоративных страниц и интернет-магазинов. Благодаря визуальному редактору и готовым блокам создаётся быстро и эффективно.",
+      featuresTitle: "Основные особенности:",
+      features: [
+        "Современный дизайн с возможностью индивидуальной настройки под ваш бренд",
+        "Адаптивный дизайн, отлично выглядящий на всех устройствах",
+        "Интеграции с CRM, платёжными системами и аналитикой",
+      ],
+      path: "tilda-site",
+      pathInPagesInfo: "/services/tilda",
+    nameBtn: "Подробнее о Tilda",
+    },
   {
     icon: faChartLine,
     name: "Landing Page",

@@ -6,6 +6,10 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import websiteTemplatesLP from "../websiteTemplatesLP.js";
 
 function TabsBtnPages() {
+  const tilda = websiteTemplatesLP.filter(
+    (item) => item["title-keis-preview"] === "Tilda"
+  );
+
   const templates = websiteTemplatesLP.filter(
     (item) => item["title-keis-preview"] === "Шаблоны"
   );
@@ -16,6 +20,33 @@ function TabsBtnPages() {
 
   return (
     <div className="keis-preview">
+<h1 className="title-keis-preview">Все шаблоны на Tilda</h1>
+
+<div className="block-with-website-templates">
+  {tilda.map((item, index) => (
+    <div className="box-with-examples" key={index}>
+      <div className="img-wrapper">
+        <img
+          className="img-preview"
+          src={`${process.env.PUBLIC_URL}${item["img-preview"]}`}
+          alt={item.alt}
+        />
+        <div className="description-and-button">
+          <h2 className="title-website">{item["title-website"]}</h2>
+          <p className="subtitle-website">{item["subtitle-website"]}</p>
+          <a className="button-more-details" href={item.href}>
+            <span className="text">Посмотреть</span>
+            <FontAwesomeIcon
+              className="arrow-right"
+              icon={faArrowRight}
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
       <h1 className="title-keis-preview">Все шаблоны</h1>
 
       <div className="block-with-website-templates">

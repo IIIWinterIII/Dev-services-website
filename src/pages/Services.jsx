@@ -67,7 +67,9 @@ function Services() {
               index
             ) => (
               <div className="box-with-data-type" key={index} id={`${path}`}>
-                <FontAwesomeIcon icon={icon} className="icon-top-type-box" />
+                <div className="containet-icons-box-services">
+                  <FontAwesomeIcon icon={icon} className={`icon-top-type-box ${name === "Tilda" ? "tildaStyle" : ""}`} />
+                </div>
                 <h2 className="title-type-box">{name}</h2>
                 <p className="subtitle-type-box">{subtitle}</p>
                 <p className="features-title">{featuresTitle}</p>
