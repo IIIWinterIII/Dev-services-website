@@ -16,31 +16,39 @@ import ContactForm from "./components/ContactForm.jsx";
 
 import servicesDataForServicesPage from "./serviceDataForServicePage.js";
 import LandingPage from "./pages/pages-info-services-individual/LandingPage.jsx";
+import { useState } from "react";
+import BannerOfWorks from "./BannerOfWorks.jsx";
 
 function App() {
+  const [works, setWorks] = useState(true);
+
   return (
-    <div className="App">
-      <Header />
-      <main className="content">
-        <PageAlwaysOnTop />
-        <Routes>
-          {routes.map(({ path, component: Component }, index) => (
-            <Route key={index} path={path} element={<Component />} />
-          ))}
-          {servicesDataForServicesPage.map(({ pathInPagesInfo }, index) => (
-            <Route
-              key={index}
-              path={pathInPagesInfo}
-              element={<LandingPage />}
-            />
-          ))}
-        </Routes>
-        <ScrollToTopButton />
-        <FixedButtonContact />
-        <ContactForm />
-      </main>
-      <Footer />
-    </div>
+    <>
+    {works ? <BannerOfWorks /> : 
+      <div className="App">
+        <Header />
+        <main className="content">
+          <PageAlwaysOnTop />
+          <Routes>
+            {routes.map(({ path, component: Component }, index) => (
+              <Route key={index} path={path} element={<Component />} />
+            ))}
+            {servicesDataForServicesPage.map(({ pathInPagesInfo }, index) => (
+              <Route
+                key={index}
+                path={pathInPagesInfo}
+                element={<LandingPage />}
+              />
+            ))}
+          </Routes>
+          <ScrollToTopButton />
+          <FixedButtonContact />
+          <ContactForm />
+        </main>
+        <Footer />
+      </div>
+      }
+    </>
   );
 }
 
